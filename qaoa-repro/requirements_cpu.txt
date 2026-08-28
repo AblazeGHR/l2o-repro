@@ -1,0 +1,7 @@
+# CPU-only reproduction environment for Neural-QAOA-Squared baseline
+# (miniforge python: torch 2.9.0+cu129 already present; no GPU wheels needed)
+pennylane==0.42.3
+torch-geometric==2.6.1
+python-igraph
+pymetis
+seaborn

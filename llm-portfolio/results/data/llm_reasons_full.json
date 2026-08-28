@@ -1,0 +1,3277 @@
+{
+ "19": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.4457)，且nn_spread_ratio=0.6995表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛到高质量解。RI2opt虽有多重启优势，但初始解质量不如NN2opt；GA和GA2opt虽全局探索强，但2秒内可能未充分收敛，且对小实例优势不明显。NN2opt的确定性搜索策略在此规模下更可能快速找到最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 147,
+   "total": 915
+  }
+ },
+ "258": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对均匀(nn_cv=0.5366)，最近邻算法初始解质量尚可(nn_tour_len=5.2116)。NN2算法通过多起点策略结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。随机插入(ri_tour_len=4.0925)表现更好，表明实例结构可能有利于贪心算法。GA和GA2opt虽然全局探索能力强，但在小规模实例中收敛速度可能不如NN2opt高效，且2秒时间预算足够NN2opt进行充分局部优化。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 150,
+   "total": 916
+  }
+ },
+ "2": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对集中(nn_spread_ratio=0.5107<1)，且最近邻变异系数中等(nn_cv=0.6499)，表明城市分布有一定规律但不极端。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。NN2opt的初始解质量较好(nn_tour_len=5.139)，且2-opt能有效优化局部结构。GA算法虽全局探索强但收敛可能较慢；GA2opt虽结合局部搜索但计算开销大；RI2opt初始解质量较低(ri_tour_len=4.3264)，且随机性可能导致不稳定。NN2opt在2秒内最可能找到最优或接近最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 187,
+   "total": 949
+  }
+ },
+ "257": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，几何结构相对均匀(nn_cv=0.3423)，最近邻与随机插入解质量接近(nn_over_ri=1.0101)，表明局部优化可能快速收敛。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速找到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在小规模实例中效率不如NN2opt直接的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 137,
+   "total": 901
+  }
+ },
+ "189": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.5953)，最近邻算法已能获得较好初始解(3.4306)，随机插入甚至更优(3.0291)。NN2算法通过多起点策略结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA和GA2opt虽然全局探索能力强，但在小实例中收敛速度可能不及NN2opt。RI2opt虽有重启机制，但初始解质量不如NN2opt的贪心策略，在2秒内难以超越NN2opt的效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 761,
+   "completion": 148,
+   "total": 909
+  }
+ },
+ "291": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=30)，且几何结构相对均匀(nn_cv=0.585)，最近邻算法(nn_over_ri=0.9316)已能提供高质量初始解。NN2opt通过多起点策略结合2-opt局部搜索，能在短时间内快速收敛至高质量解。GA虽然探索能力强，但小规模实例下收敛速度可能不及NN2opt；GA2opt增加了局部搜索但计算开销更大；RI2opt的随机插入策略不如NN2opt的确定性策略高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 130,
+   "total": 895
+  }
+ },
+ "18": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=25)，几何结构相对均匀(nn_cv=0.5234)，最近邻算法表现良好(nn_over_ri=1.2907)，表明局部结构较规则。NN2opt通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。GA2opt虽然稳健但全局搜索在小实例中可能过度探索；GA缺乏局部搜索难以精修；RI2opt初始解质量较低(ri_tour_len更短但nn_over_ri>1表明NN实际更好)，重启策略不如NN2opt定向高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 149,
+   "total": 914
+  }
+ },
+ "223": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.7454)，且nn_spread_ratio=0.4163表明节点聚集程度较高，适合NN2opt的多起点策略快速收敛。NN2opt通过多起点最近邻构建初始解并2-opt优化，能在小规模实例中快速找到高质量解。NN_tour_len(4.7048)与RI_tour_len(3.9261)差距不大，表明NN初始解质量尚可。GA和GA2opt虽全局探索强，但在小规模且结构规整的实例中收敛速度可能不及NN2opt；RI2opt虽多次重启，但初始解质量不如NN2opt稳定，且2-opt优化效率可能低于NN2opt的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 189,
+   "total": 956
+  }
+ },
+ "155": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=30)，几何分布相对均匀(nn_cv=0.5318)，且nn_spread_ratio=0.5585表明节点分布适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。RI2opt虽然通过多次重启增加多样性，但在2秒内可能无法充分探索；GA算法全局探索强但局部搜索不足；GA2opt虽有局部搜索但种群初始化耗时，在小实例中优势不明显。NN2opt的快速初始化与高效局部搜索使其在此规模和几何分布下最可能获得最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 157,
+   "total": 921
+  }
+ },
+ "87": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构较为均匀(nn_cv=0.6621)，且nn_spread_ratio=0.5454表明节点分布相对聚集。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。随机插入(RI)初始解质量更好(ri_tour_len更短)，但NN2opt的多起点策略能更全面探索解空间。GA和GA2opt虽然全局探索能力强，但在2秒预算内可能难以充分收敛，且对小实例而言局部搜索效率更高。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 149,
+   "total": 916
+  }
+ },
+ "121": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构较为均匀(nn_cv=0.7541)，节点分布适中(nn_spread_ratio=0.5401)。NN2算法利用多起点最近邻策略能快速构建高质量初始解，配合2-opt局部搜索能在短时间内找到最优解。GA算法虽全局探索强但收敛慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机插入策略不如NN2opt直接有效。NN2opt在这种小规模均匀实例中表现最佳，能在2秒内高效收敛。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 138,
+   "total": 900
+  }
+ },
+ "53": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，且几何结构相对集中(nn_spread_ratio=0.5936<1)，表明节点分布较为紧凑。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛到高质量解。nn_over_ri=1.1449表明最近邻解质量优于随机插入，而nn_cv=0.5431显示节点分布均匀性适中，适合NN2opt的贪心策略。GA和GA2opt虽全局探索强，但小规模实例下收敛速度可能不及NN2opt；RI2opt虽多次重启，但初始解质量不如NN2opt，在2秒内难以超越。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 171,
+   "total": 936
+  }
+ },
+ "17": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，节点分布相对均匀(nn_cv=0.4255)，且nn_spread_ratio=0.603表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛到高质量解。NN2opt的初始解质量(nn_tour_len=3.9672)与随机插入相当(nn_over_ri=1.0425)，但局部搜索效率更高。GA算法虽全局探索强但收敛慢，GA2opt计算开销大，RI2opt初始解质量一般且重启策略不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 159,
+   "total": 923
+  }
+ },
+ "256": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.8226)，最近邻算法初始解质量较好(nn_tour_len=3.4111)，且nn_over_ri=1.0974表明NN与RI解差距不大。NN2opt通过多起点策略能快速探索不同初始解，结合2-opt局部搜索在2秒内很可能找到最优解。GA虽全局探索强但小实例收敛慢，GA2opt计算开销大，RI2opt初始解质量不如NN2opt稳定。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 138,
+   "total": 901
+  }
+ },
+ "188": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对紧凑(nn_spread_ratio=0.5455<1表明节点聚集)，且nn_cv=0.6296表明分布均匀性适中。NN2opt算法通过多起点最近邻+2-opt能在小规模实例中极快收敛到高质量解。RI2opt虽有多重启但初始解质量不如NN；GA和GA2opt在小规模上收敛速度可能不及NN2opt的直接局部搜索。nn_over_ri=1.1017表明NN初始解略差于RI，但2-opt改进后NN2opt仍可能更快达到最优。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 153,
+   "total": 918
+  }
+ },
+ "290": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对均匀(nn_cv=0.7049)，适合NN2opt算法快速收敛。NN2opt通过多起点最近邻构建初始解并应用2-opt局部搜索，能在小规模实例中高效找到高质量解。nn_spread_ratio=0.4441表明节点分布相对聚集，有利于最近邻策略。GA和GA2opt虽全局探索强，但在小规模且结构均匀的实例中可能收敛较慢；RI2opt虽多次重启，但初始解质量不如NN策略，且2-opt优化时间可能不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 152,
+   "total": 919
+  }
+ },
+ "222": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对均匀(nn_cv=0.5972)，适合NN2opt算法快速收敛。NN2opt通过多起点最近邻构建初始解并应用2-opt局部搜索，能在小规模实例中极快找到高质量解。nn_over_ri=1.076表明NN与RI初始解质量接近，但NN2opt的局部搜索能力更强。GA和GA2opt在小规模实例中可能因种群初始化和迭代开销而无法充分利用2秒时间。RI2opt虽然重启次数多，但初始解质量不如NN2opt，且在小规模上优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 157,
+   "total": 919
+  }
+ },
+ "154": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.4528)，最近邻算法初始解质量较好(nn_tour_len=5.1669)，且随机插入算法表现更优(ri_tour_len=4.6978)，表明问题难度适中。NN2算法通过多起点策略结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt重启策略在2秒内难以充分探索。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 144,
+   "total": 912
+  }
+ },
+ "86": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对均匀(nn_cv=0.7537)，适合NN2opt算法快速收敛。NN2opt通过多起点最近邻构建初始解并应用2-opt局部搜索，能在小规模实例中高效找到高质量解。随机插入(RI2opt)虽然初始解更优(ri_tour_len更短)，但NN2opt的多起点策略能更好探索解空间。遗传算法(GA/GA2opt)在小规模实例中收敛速度可能不及NN2opt，且2-opt局部搜索已能提供足够的局部优化能力。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 147,
+   "total": 915
+  }
+ },
+ "120": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.5452)，且最近邻算法已给出较优解(nn_tour_len=3.4684)。NN2opt算法通过多起点最近邻构建初始解并快速2-opt局部搜索，能在极短时间内找到高质量解。GA虽探索能力强但收敛慢，GA2opt局部搜索开销大，RI2opt初始解质量不如NN2opt，在2秒内NN2opt最可能找到最短回路。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 130,
+   "total": 897
+  }
+ },
+ "52": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.4256)，最近邻算法初始解质量高(nn_over_ri=0.9568)，且单位节点成本低(0.2482)。NN2算法通过多起点策略能快速探索优质解，结合2-opt局部搜索在2秒内极可能找到最优解。GA算法虽探索能力强但收敛慢，GA2opt计算开销大，RI2opt初始解质量不如NN2opt，在小型均匀实例中劣势明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 135,
+   "total": 903
+  }
+ },
+ "190": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.3235)，最近邻算法初始解质量较好(nn_tour_len=4.8638)，且nn_spread_ratio=0.5579表明节点分布适中。NN2算法通过多起点策略结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。GA算法虽全局探索强但收敛速度较慢；GA2opt增加了局部搜索但计算开销大；RI2opt初始解质量不如NN2opt且重启策略在此规模下优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 143,
+   "total": 910
+  }
+ },
+ "16": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.5229)，节点分布中等分散(nn_spread_ratio=0.5585)。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能在极短时间内收敛到高质量解。随机插入(RI)初始解质量更好(ri_tour_len更短)，但NN2opt的多起点策略能更全面探索解空间。遗传算法(GA/GA2opt)在小规模问题上收敛速度可能不及NN2opt，且需要更多时间进化种群。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 145,
+   "total": 912
+  }
+ },
+ "255": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构较为均匀(nn_cv=0.5229)，且最近邻与随机插入解质量接近(nn_over_ri=1.2498)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此规模下效率不如NN2opt直接的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 136,
+   "total": 902
+  }
+ },
+ "156": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.7796)，且最近邻算法表现良好(quick_tour_per_node=0.2658)。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在极短时间内(远小于2秒)找到高质量解，特别适合小规模问题。GA和GA2opt虽然全局探索能力强，但在小问题上收敛速度可能不如NN2opt；RI2opt虽然重启次数多，但初始解质量不如NN2opt，且在小规模问题上优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 143,
+   "total": 912
+  }
+ },
+ "187": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构较为均匀(nn_cv=0.6014)，且nn_spread_ratio=0.6271表明节点分布相对聚集。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。NN2opt的初始解质量较好(nn_tour_len=6.733)，且局部搜索能力强，适合这种规模和几何特征的实例。GA虽然全局探索能力强，但2秒内可能未充分收敛；GA2opt计算开销更大；RI2opt初始解质量较低(ri_tour_len=5.0208)，不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 165,
+   "total": 930
+  }
+ },
+ "289": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.5165)，最近邻算法表现良好(nn_tour_len=4.8404)。NN2opt算法通过多起点策略能快速探索优质解，结合2-opt局部搜索可高效优化。GA2opt虽稳健但收敛较慢，GA缺乏局部搜索难以精修，RI2opt初始解质量较低(ri_tour_len=3.8279)且重启策略在小规模上优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 128,
+   "total": 894
+  }
+ },
+ "221": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，节点分布相对均匀(nn_cv=0.4633)，且最近邻算法已给出较好的初始解(nn_tour_len=4.7586)。NN2算法通过多起点策略结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。相比之下，GA算法虽全局探索强但收敛较慢；GA2opt虽有局部搜索但计算开销大；RI2opt初始解质量不如NN，且重启策略在小规模上优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 129,
+   "total": 892
+  }
+ },
+ "153": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.4756)，且最近邻与随机插入解质量接近(nn_over_ri=1.0498)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此规模下效率不如NN2opt直接的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 136,
+   "total": 903
+  }
+ },
+ "85": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，且几何结构相对均匀(nn_cv=0.5038)，适合NN2opt算法快速收敛。NN2opt通过多起点最近邻策略能快速获得高质量初始解，再通过2-opt局部搜索精修，在2秒内很可能找到最优解。相比之下，GA和GA2opt虽然全局探索能力强，但在小规模实例中收敛速度可能不如NN2opt。RI2opt虽然重启次数多，但初始解质量不如NN2opt，且在小规模实例中优势不明显。nn_spread_ratio=0.6475表明节点分布相对聚集，进一步支持NN2opt的高效性。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 161,
+   "total": 925
+  }
+ },
+ "119": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构相对均匀(nn_cv=0.5989)，最近邻与随机插入解质量接近(nn_over_ri=1.0154)，表明局部优化可能高效。NN2opt通过多起点策略能快速探索优质解，2-opt局部搜索在2秒内足以充分优化。GA虽全局探索强但收敛较慢；GA2opt计算开销大；RI2opt初始解质量不占优且重启策略在此规模下效率不如NN2opt的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 134,
+   "total": 899
+  }
+ },
+ "51": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=30)，且几何结构相对规则(nn_cv=0.7479，变异系数中等)，最近邻算法(nn_tour_len=6.0518)与随机插入(ri_tour_len=4.786)的初始解差距不大(nn_over_ri=1.2645)，表明问题难度适中。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解，2秒内足够完成多次优化迭代。GA算法虽然全局探索能力强，但在小问题上收敛速度可能不及NN2opt；GA2opt增加了局部搜索但计算开销更大；RI2opt的随机插入初始解质量不如NN2opt的最近邻策略稳定。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 180,
+   "total": 945
+  }
+ },
+ "15": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.4845)，且nn_spread_ratio=0.6018表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛到高质量解。NN2opt的优势在于其确定性搜索能高效利用2秒时间，而GA和GA2opt的随机性可能导致收敛不稳定；RI2opt虽然重启次数多，但初始解质量不如NN2opt稳定。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 134,
+   "total": 899
+  }
+ },
+ "254": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.6925)，最近邻算法表现良好(nn_over_ri=1.1298)。NN2opt算法通过多起点策略能快速找到高质量初始解，并在2秒内充分进行2-opt局部搜索，对小规模实例通常能快速收敛到最优解。GA算法虽全局探索强但收敛速度较慢；GA2opt增加了局部搜索但计算开销大；RI2opt初始解质量不如NN2opt且重启次数有限，在2秒内难以超越NN2opt的效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 145,
+   "total": 911
+  }
+ },
+ "186": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.2695)，最近邻与随机插入解质量接近(nn_over_ri=1.1774)，表明问题难度适中。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA虽然全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机插入初始解质量不如NN2opt的最近邻策略稳定，在2秒预算内NN2opt最可能找到最短回路。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 148,
+   "total": 912
+  }
+ },
+ "288": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.708)，最近邻与随机插入解质量接近(nn_over_ri=1.0159)，表明局部优化空间有限。NN2算法通过多起点最近邻+2-opt能在小规模实例中快速收敛到高质量解，2秒内足够完成多次2-opt优化。GA算法虽探索能力强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在小规模上不如NN2高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 135,
+   "total": 898
+  }
+ },
+ "220": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.5608)，节点分布适中(nn_spread_ratio=0.6838)。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。随机插入(RI2opt)虽然初始解更优(ri_tour_len更短)，但NN2opt的多起点策略能更全面探索解空间。遗传算法(GA/GA2opt)在小规模问题上收敛速度可能不及NN2opt，且缺乏NN2opt的确定性局部搜索优势。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 149,
+   "total": 917
+  }
+ },
+ "152": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.4901)，最近邻与随机插入回路长度接近(nn_over_ri=1.1191)，表明局部优化空间有限。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛较慢；GA2opt虽有局部搜索但计算开销大；RI2opt重启策略在小规模实例中效率不如NN2opt直接的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 135,
+   "total": 897
+  }
+ },
+ "84": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.3651)，最近邻算法表现良好(nn_over_ri=0.9179)。NN2opt通过多起点策略能快速探索解空间，结合2-opt局部搜索在短时间内找到高质量解。GA虽然探索能力强但小规模问题收敛慢；GA2opt计算开销大；RI2opt初始解质量不如NN2opt，在2秒内难以超越NN2opt的效率与质量。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 125,
+   "total": 893
+  }
+ },
+ "14": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.7287)，最近邻算法表现良好(nn_over_ri=1.1348)。NN2opt通过多起点策略能快速找到高质量初始解，2-opt局部搜索在短时间内可高效优化。GA虽然全局探索强但收敛较慢；GA2opt计算开销大；RI2opt初始解质量不如NN2opt且重启策略在小型实例上效率不高。NN2opt在小型均匀实例上通常能在2秒内找到接近最优的解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 138,
+   "total": 904
+  }
+ },
+ "118": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.7008)，最近邻与随机插入解质量接近(nn_over_ri=1.1253)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt初始解质量一般且重启策略不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 131,
+   "total": 897
+  }
+ },
+ "50": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对均匀(nn_cv=0.6758)，最近邻与随机插入解质量接近(nn_over_ri=1.0119)，表明局部优化潜力大。NN2算法通过多起点最近邻初始化并快速2-opt改进，能在小规模实例中极快收敛到高质量解。GA虽探索强但收敛慢，GA2opt计算开销大，RI2opt初始解质量不如NN2opt稳定，在2秒预算内NN2opt最可能找到最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 138,
+   "total": 905
+  }
+ },
+ "0": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.5117)，且nn_spread_ratio=0.5171表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛至高质量解。NN2opt的优势在于其高效的全局搜索与局部改进能力，特别适合这种规模小且结构规整的实例。相比之下，GA和GA2opt虽全局探索强，但收敛速度可能不及NN2opt；RI2opt虽多次重启，但初始解质量不如NN2opt，在2秒内难以超越NN2opt的优化效果。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 165,
+   "total": 931
+  }
+ },
+ "253": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.5231)，节点分布适中(nn_spread_ratio=0.5301)。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。随机插入(RI)初始解质量较好(ri_tour_len=3.6663)，但NN2opt的多起点策略能更好探索解空间。遗传算法(GA/GA2opt)在小规模问题上收敛速度可能不及NN2opt，且2-opt局部搜索已能提供足够的局部优化能力。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 153,
+   "total": 919
+  }
+ },
+ "185": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构较为均匀(nn_cv=0.6159)，且nn_spread_ratio=0.5348表明节点分布相对聚集。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能极快收敛到高质量解。RI2opt虽然通过多次重启增加多样性，但初始解质量不如NN2opt直接。GA和GA2opt由于需要种群进化，在小实例上收敛速度可能不及NN2opt直接优化。NN2opt的快速回路长度(4.5412)虽略高于随机插入，但结合2-opt后能快速改进，在2秒内很可能找到最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 170,
+   "total": 935
+  }
+ },
+ "287": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例节点数n=30属于小规模问题，几何结构相对均匀(nn_cv=0.7068)，最近邻与随机插入解质量接近(nn_over_ri=1.0482)，表明局部优化潜力大。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt初始解质量一般且重启策略不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 138,
+   "total": 903
+  }
+ },
+ "13": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.4801)，最近邻算法表现良好(nn_tour_len=4.8504)。NN2opt算法通过多起点策略能快速探索优质解，2-opt局部搜索能高效优化回路，在2秒内极可能找到最优解。GA算法虽全局探索强但收敛慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt初始解质量较低(ri_tour_len=4.0714)且重启策略在小型实例中效率不如NN2opt。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 145,
+   "total": 910
+  }
+ },
+ "219": {
+  "algorithm": null,
+  "confidence": 0.0,
+  "reason": "API error: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}",
+  "parse_failed": true
+ },
+ "151": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构较为均匀(nn_cv=0.7759)，且最近邻算法已给出不错的初始解(nn_tour_len=4.8144)。NN2算法通过多起点最近邻构建初始解并应用2-opt局部搜索，对于这种规模和均匀性的问题能在极短时间内收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机插入初始解质量不如NN算法(nn_over_ri=1.1473表明NN更好)，且重启策略在2秒内可能无法充分探索。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 155,
+   "total": 921
+  }
+ },
+ "83": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构较为均匀(nn_cv=0.5682)，节点分布相对集中(nn_spread_ratio=0.5233<1)。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。随机插入(RI)初始解质量更好(ri_tour_len更短)，但NN2opt的多起点策略能更全面探索解空间。遗传算法(GA/GA2opt)在小规模实例中收敛速度可能不及NN2opt，且缺乏NN2opt的确定性局部搜索优势。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 152,
+   "total": 919
+  }
+ },
+ "117": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.5609)，最近邻与随机插入解质量相当(nn_over_ri=1.0107)，表明局部优化潜力大。NN2opt通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA虽全局探索强但收敛较慢；GA2opt虽包含局部搜索但计算开销大；RI2opt初始解质量中等且重启策略不如NN2opt定向高效。NN2opt在2秒内极可能找到最优或近优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 149,
+   "total": 911
+  }
+ },
+ "49": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.5745)，最近邻与随机插入解质量接近(nn_over_ri=1.0672)，表明局部优化空间有限。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解，且2秒时间预算足够进行多次局部优化。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索可能略慢于NN2opt，RI2opt初始解质量不如NN2opt且重启次数有限，难以在短时间内超越NN2opt的效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 157,
+   "total": 923
+  }
+ },
+ "12": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，且几何结构相对均匀(nn_cv=0.926)，NN2算法能快速构建高质量初始解并通过多起点2-opt局部搜索高效优化。NN2opt对小规模实例通常能在极短时间内收敛到接近最优解。相比之下，GA虽探索能力强但收敛速度可能较慢；GA2opt虽有局部搜索但遗传操作开销大；RI2opt的随机插入初始解质量不如NN，且重启策略在2秒内可能无法充分探索。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 127,
+   "total": 890
+  }
+ },
+ "252": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对紧凑(nn_spread_ratio=0.4012<1表明节点聚集)，且最近邻与随机插入解质量接近(nn_over_ri=1.1376)。NN2opt算法通过多起点策略能快速探索优质解，2-opt局部搜索在小规模下高效收敛。GA虽全局探索强但收敛慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt初始解质量一般且重启策略不如NN2opt定向高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 132,
+   "total": 896
+  }
+ },
+ "184": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.7878)，最近邻与随机插入解质量接近(nn_over_ri=1.013)，表明局部优化潜力大。NN2opt通过多起点最近邻初始化+2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA虽探索强但收敛慢，GA2opt局部搜索开销大，RI2opt初始解质量不如NN2opt稳定，均难以在2秒内超越NN2opt的效率与精度。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 137,
+   "total": 904
+  }
+ },
+ "286": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.4703)，且最近邻算法表现不佳(nn_over_ri=1.3322)，表明存在局部最优陷阱。NN2算法通过多起点策略能有效避免局部最优，2-opt局部搜索能快速改进解质量。GA算法虽全局探索强但收敛较慢，GA2opt计算开销大，RI2opt初始解质量一般且重启策略不如NN2opt的多起点策略高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 125,
+   "total": 890
+  }
+ },
+ "218": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对规则(nn_spread_ratio=0.5684<1，表明节点分布较为聚集)。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛到高质量解。NN2opt的优势在于其快速构建初始解的能力，且2-opt能有效优化局部结构。相比之下，GA和GA2opt虽然全局探索能力强，但在小规模实例上可能收敛较慢；RI2opt的随机插入初始解质量不如NN2opt，且重启次数有限，难以在2秒内超越NN2opt的效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 155,
+   "total": 920
+  }
+ },
+ "150": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例节点数较小(n=25)，几何结构较为均匀(nn_cv=0.5151)，且nn_spread_ratio=0.565表明节点分布适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛到高质量解。NN2opt的优势在于其高效的全局探索与局部改进结合，能在2秒内充分搜索。相比之下，GA和GA2opt虽然全局探索能力强，但收敛速度较慢；RI2opt初始解质量不如NN2opt，且重启策略在短时间内难以超越NN2opt的效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 151,
+   "total": 915
+  }
+ },
+ "82": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=25)，节点分布相对均匀(nn_cv=0.3842)，且最近邻算法表现良好(nn_over_ri=1.04)。NN2opt算法通过多起点最近邻构建初始解并快速进行2-opt局部搜索，能在小规模实例中高效收敛到高质量解。GA2opt虽然稳健但全局搜索可能浪费计算资源；GA缺乏局部搜索难以精修；RI2opt初始解质量一般且重启策略不如NN2opt定向高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 127,
+   "total": 891
+  }
+ },
+ "116": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.5767)，最近邻与随机插入解质量接近(nn_over_ri=1.0579)，表明局部优化潜力大。NN2opt通过多起点策略能快速探索不同初始解，结合2-opt局部搜索在小规模实例中通常能迅速收敛至高质量解。GA虽然全局探索强但收敛速度可能不及NN2opt；GA2opt增加了局部搜索但计算开销更大；RI2opt的随机插入初始解质量不如NN2opt的多起点策略高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 142,
+   "total": 910
+  }
+ },
+ "48": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.4917)，且NN2opt对小实例特别有效。随机插入初始解(ri_tour_len=3.3282)优于最近邻(nn_tour_len=4.1957)，表明NN可能陷入局部最优，而NN2opt通过多起点2-opt能快速跳出。GA和GA2opt在小实例上收敛速度可能不及NN2opt，RI2opt虽有多重启但初始解质量不如NN2opt的贪心策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 136,
+   "total": 900
+  }
+ },
+ "11": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=30)，几何结构相对均匀(nn_cv=0.4235)，且最近邻与随机插入初始解质量接近(nn_over_ri=1.1795)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在2秒内可能无法充分探索。NN2opt在此类小规模、几何均匀的实例上通常能在极短时间内找到接近最优的解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 155,
+   "total": 922
+  }
+ },
+ "251": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构相对均匀(nn_cv=0.5789)，最近邻与随机插入解质量接近(nn_over_ri=1.0938)，表明局部优化可能有效。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛较慢；GA2opt虽结合局部搜索但计算开销大；RI2opt随机性高且初始解质量一般，在2秒内难以超越NN2opt的效率与精度。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 144,
+   "total": 910
+  }
+ },
+ "183": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.4718)，且最近邻与随机插入解质量接近(nn_over_ri=1.0397)，表明几何结构规整。NN2opt通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA虽探索能力强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此规模下效率不如NN2opt直接。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 133,
+   "total": 897
+  }
+ },
+ "285": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构较为均匀(nn_cv=0.6881)，且NN2opt对小实例(n<=30)表现优异。NN2opt通过多起点最近邻策略快速构建高质量初始解，再通过2-opt局部搜索快速收敛，能在2秒内找到接近最优的解。相比之下，GA和GA2opt虽然全局探索能力强，但在小实例上收敛速度可能不如NN2opt；RI2opt虽然重启次数多，但初始解质量不如NN2opt，且在小实例上优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 138,
+   "total": 903
+  }
+ },
+ "217": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，且几何结构相对均匀(nn_cv=0.3943)，适合NN2opt算法快速收敛。NN2opt通过多起点最近邻构建初始解并应用2-opt局部搜索，能在小规模实例中极快找到高质量解。NN2opt的快速回路长度(5.4137)虽略高于随机插入(4.5015)，但结合2-opt优化后很可能在2秒内找到更优解。GA和GA2opt在小规模实例中可能因种群初始化和进化过程耗时较长而无法充分收敛；RI2opt虽然重启次数多，但初始解质量不如NN2opt稳定，且在小规模实例中优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 173,
+   "total": 942
+  }
+ },
+ "149": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，节点分布相对均匀(nn_cv=0.4737)，且nn_spread_ratio=0.5913表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模问题能快速收敛到高质量解。RI2opt虽然重启次数多，但初始解质量不如NN2opt；GA和GA2opt的全局探索在小规模问题上效率较低，难以在2秒内充分收敛。NN2opt的快速回路长度(nn_tour_len=4.619)虽高于RI2opt(ri_tour_len=3.6483)，但结合2-opt优化后很可能获得更优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 173,
+   "total": 940
+  }
+ },
+ "81": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，且几何结构相对均匀(nn_cv=0.5875)，NN2算法能快速构建高质量初始解并通过2-opt局部搜索高效优化。NN2opt对小规模实例通常能在极短时间内收敛到接近最优解。相比之下，GA虽全局探索强但收敛速度较慢；GA2opt虽结合局部搜索但对小实例优势不明显；RI2opt的随机插入初始解质量不如NN，且重启策略在2秒内难以超越NN2opt的效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 130,
+   "total": 897
+  }
+ },
+ "115": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何分布相对均匀(nn_cv=0.3587)，且nn_spread_ratio=0.6364表明节点分布适中。NN2算法通过多起点最近邻策略能快速构建高质量初始解，结合2-opt局部搜索能在短时间内找到接近最优的解。相比之下，GA算法虽然全局探索能力强，但在小规模实例上收敛速度可能不如NN2opt；GA2opt虽然加入了局部搜索，但计算开销更大；RI2opt的随机插入策略初始解质量不如NN2opt稳定。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 139,
+   "total": 903
+  }
+ },
+ "47": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.4159)，最近邻算法表现良好(nn_over_ri=1.0702)。NN2opt通过多起点策略能快速找到高质量初始解，2-opt局部搜索在小规模实例中收敛极快。GA虽全局探索强但收敛较慢；GA2opt计算开销大；RI2opt初始解质量不如NN2opt。实例的几何结构适中，没有明显聚集或分散特征，使NN2opt的贪心+局部搜索组合能高效找到接近最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 144,
+   "total": 908
+  }
+ },
+ "10": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.9357)，且最近邻与随机插入解质量接近(nn_over_ri=1.0476)，表明问题难度适中。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛至高质量解。GA算法虽全局探索强但收敛较慢；GA2opt虽有局部搜索但计算开销大；RI2opt初始解质量一般且重启策略不如NN2opt高效。NN2opt在2秒内极可能找到最优或接近最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 149,
+   "total": 914
+  }
+ },
+ "250": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构较为均匀(nn_cv=0.4378)，且nn_spread_ratio=0.6121表明节点分布适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛到高质量解。RI2opt的随机插入初始解质量较差(ri_tour_len=4.3256 < nn_tour_len=5.6177)，但重启次数有限；GA和GA2opt的种群搜索在小规模实例中可能收敛较慢，难以在2秒内充分优化。NN2opt的确定性搜索策略更适合此类小规模、结构均匀的实例。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 167,
+   "total": 934
+  }
+ },
+ "182": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对均匀(nn_cv=0.8534)，表明城市分布较为规则。NN2opt算法通过多起点最近邻策略能快速构建高质量初始解，配合2-opt局部搜索能在短时间内找到接近最优的解。相比之下，GA和GA2opt虽然全局探索能力强，但在小规模实例中收敛速度可能不如NN2opt。RI2opt虽然通过多次重启提高解质量，但初始解质量不如NN2opt，且在2秒内可能无法进行足够多的重启次数。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 138,
+   "total": 907
+  }
+ },
+ "284": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.6118)，且nn_spread_ratio=0.6442表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能在极短时间内收敛到高质量解。NN2opt的初始解质量较高(nn_over_ri=1.0933)，且局部搜索能力强，适合此类规模。GA算法虽全局探索强但收敛慢，GA2opt因局部搜索开销可能错过最优解，RI2opt初始解质量较低且重启策略对小规模实例效率不如NN2opt。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 770,
+   "completion": 158,
+   "total": 928
+  }
+ },
+ "216": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.7686)，最近邻与随机插入解质量接近(nn_over_ri=1.1265)，表明局部优化空间有限。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解，且2秒预算足够完成多次起点尝试。GA算法虽全局探索强但收敛慢，GA2opt因包含局部搜索计算开销大，RI2opt随机重启策略在小规模实例中效率不如NN2opt直接的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 145,
+   "total": 907
+  }
+ },
+ "148": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.8064)，最近邻算法初始解质量高(nn_over_ri=0.9803)，且单位节点成本低(0.2295)。NN2opt通过多起点策略能快速找到高质量初始解，2-opt局部搜索在小规模下收敛极快。GA虽探索强但收敛慢，GA2opt在小规模上优势不明显，RI2opt初始解质量不如NN且重启次数有限，在2秒内难以超越NN2opt的效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 139,
+   "total": 905
+  }
+ },
+ "80": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.4719)，且nn_spread_ratio=0.4872表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能在极短时间内收敛到高质量解。NN2opt的优势在于其快速构建初始解的能力和高效的局部搜索，特别适合这种规模小且分布均匀的实例。相比之下，GA算法虽然全局探索能力强，但收敛速度较慢；GA2opt增加了计算负担；RI2opt的随机插入策略不如NN2opt的定向搜索高效，在2秒内难以超越NN2opt的解质量。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 167,
+   "total": 934
+  }
+ },
+ "9": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.4529)，最近邻与随机插入解质量接近(nn_over_ri=1.1028)，表明局部优化空间有限。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽探索能力强但收敛速度较慢；GA2opt虽结合局部搜索但计算开销大；RI2opt随机性高且初始解质量一般，在2秒内难以超越NN2opt的效率与精度。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 143,
+   "total": 907
+  }
+ },
+ "114": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对均匀(nn_cv=0.5088)，最近邻算法初始解质量较好(nn_tour_len=5.92)。NN2算法通过多起点策略能快速探索空间，结合2-opt局部搜索能在短时间内找到高质量解。相比之下，GA算法虽全局探索强但收敛较慢；GA2opt虽稳健但计算开销大；RI2opt初始解质量较低(ri_tour_len=4.87)，需要更多重启次数才能达到NN2opt的效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 135,
+   "total": 899
+  }
+ },
+ "46": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对规则(nn_cv=0.7638，变异系数中等)，最近邻与随机插入解质量接近(nn_over_ri=1.2397)。NN2算法通过多起点策略能快速找到高质量初始解，配合2-opt局部搜索能在2秒内高效收敛至较优解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此小规模实例中效率不及NN2opt的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 140,
+   "total": 907
+  }
+ },
+ "8": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.2668)，且nn_spread_ratio=0.4257表明节点聚集程度较高。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，能在小规模实例中极快收敛到高质量解。RI2opt虽然通过多次重启增加多样性，但在小规模实例中优势不明显；GA和GA2opt由于需要种群进化，在小规模问题中收敛速度可能不及NN2opt直接搜索。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 132,
+   "total": 898
+  }
+ },
+ "249": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，节点分布相对均匀(nn_cv=0.3588)，且最近邻算法已给出较好初始解(nn_tour_len=4.7025)。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中极快收敛到高质量解。GA2opt虽然稳健但全局搜索在小规模上可能过度；GA缺乏局部搜索难以精修；RI2opt初始解质量不如NN2opt且重启策略在小规模上效率较低。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 133,
+   "total": 900
+  }
+ },
+ "181": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.3786)，最近邻算法表现良好(nn_tour_len=4.2257)。NN2opt通过多起点策略能快速探索优质解，2-opt局部搜索可高效优化。GA虽然探索能力强但小规模下收敛速度可能不及NN2opt；GA2opt增加了计算开销；RI2opt初始解质量较低(ri_tour_len=3.4192)，需要更多重启次数才能达到NN2opt的精度。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 133,
+   "total": 898
+  }
+ },
+ "283": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何分布相对均匀(nn_cv=0.6052)，最近邻与随机插入解质量接近(nn_over_ri=1.0642)，表明结构不复杂。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。GA虽然全局探索强但收敛可能较慢；GA2opt虽有局部搜索但计算开销大；RI2opt初始解质量中等且重启策略不如NN2opt高效。NN2opt在2秒内极可能找到最优或接近最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 149,
+   "total": 915
+  }
+ },
+ "215": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.5043)，且nn_spread_ratio=0.4859表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解并应用2-opt局部搜索，对小规模实例能快速收敛到高质量解。随机插入(RI)初始解质量更好(ri_tour_len=4.16 < nn_tour_len=5.24)，但NN2opt的多起点策略能更全面探索解空间。GA和GA2opt虽然全局探索能力强，但在2秒内可能无法充分收敛，且对小实例优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 155,
+   "total": 921
+  }
+ },
+ "147": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构较为均匀(nn_cv=0.3678)，节点分布相对集中(nn_spread_ratio=0.666<1)。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。NN2opt的优势在于其高效的全局探索与局部改进平衡，特别适合这种规模适中且结构规整的实例。相比之下，GA虽然探索能力强但收敛速度较慢；GA2opt增加了计算开销；RI2opt的随机初始化不如NN2opt的定向搜索高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 148,
+   "total": 913
+  }
+ },
+ "79": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.4438)，且nn_spread_ratio=0.6015表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛到高质量解。RI2opt虽有多重启优势，但初始解质量不如NN2opt稳定；GA和GA2opt的全局探索在小规模实例中可能收敛较慢，难以在2秒内超越NN2opt的局部搜索效率。NN2opt的nn_over_ri=1.1226表明最近邻解质量尚可，结合2-opt优化后很可能获得最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 168,
+   "total": 935
+  }
+ },
+ "113": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，几何结构相对均匀(nn_cv=0.7945)，最近邻与随机插入解质量接近(nn_over_ri=1.0731)，表明问题难度适中。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛至高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此规模下不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 132,
+   "total": 898
+  }
+ },
+ "45": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.6438)，最近邻算法初始解质量较好(nn_tour_len=3.8806)，且nn_spread_ratio=0.5019表明节点分布适中。NN2算法通过多起点策略能快速找到高质量初始解，2-opt局部搜索在短时间内能有效优化，特别适合小规模问题。GA算法虽探索能力强但收敛可能较慢；GA2opt虽稳健但计算开销大；RI2opt初始解质量不如NN2opt，且重启策略在小规模问题中优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 148,
+   "total": 914
+  }
+ },
+ "7": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=30)，几何结构相对均匀(nn_cv=0.5215)，最近邻与随机插入解质量接近(nn_over_ri=1.0194)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt初始解质量一般且重启策略不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 133,
+   "total": 897
+  }
+ },
+ "248": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.597)，最近邻算法初始解质量高(nn_over_ri=0.9846)，且nn_spread_ratio=0.5424表明节点聚集程度适中。NN2算法通过多起点策略能快速探索优质解，2-opt局部搜索在小规模下收敛极快。GA算法虽全局探索强但收敛慢，GA2opt在小规模上优势不明显；RI2opt初始解质量不如NN，重启策略在2秒内难以超越NN2opt的效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 143,
+   "total": 911
+  }
+ },
+ "180": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.5218)，且最近邻与随机插入解质量接近(nn_over_ri=1.0105)，表明局部优化空间有限。NN2算法通过多起点策略能快速探索解空间，结合2-opt局部搜索，在小规模实例中通常能在2秒内找到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在小规模实例中效率不如NN2opt直接。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 140,
+   "total": 906
+  }
+ },
+ "282": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.9131)，最近邻与随机插入回路长度差距适中(nn_over_ri=1.22)，NN2opt算法通过多起点策略能快速找到高质量初始解，2-opt局部搜索在短时间内可有效优化。GA虽然探索能力强但收敛较慢，GA2opt因包含局部搜索计算开销大，RI2opt的随机重启策略在小型实例上效率不如NN2opt的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 125,
+   "total": 890
+  }
+ },
+ "214": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.6096)，最近邻与随机插入解质量接近(nn_over_ri=1.0473)，表明问题难度适中。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解，且2秒时间预算足够完成多次起点尝试和局部优化。相比之下，GA和GA2opt虽然全局探索能力强，但在小规模问题上收敛速度可能不及NN2opt；RI2opt虽然重启次数多，但初始解质量不如NN2opt的最近邻策略，且2秒内可能无法充分探索所有可能性。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 165,
+   "total": 929
+  }
+ },
+ "146": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=25)，节点分布相对均匀(nn_cv=0.4865)，且nn_spread_ratio=0.5349表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛到高质量解。RI2opt虽然重启次数多，但初始解质量较差(ri_tour_len=4.2826远低于nn_tour_len)。GA和GA2opt虽然全局探索能力强，但在2秒预算内可能难以充分收敛，且对小实例优势不明显。NN2opt在此类中等规模、分布均匀的实例上通常能最快找到高质量解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 165,
+   "total": 928
+  }
+ },
+ "78": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，节点分布相对均匀(nn_cv=0.3463)，且最近邻算法与随机插入算法性能接近(nn_over_ri=1.1675)，表明几何结构规整。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此规模下效率不及NN2opt的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 138,
+   "total": 904
+  }
+ },
+ "112": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.393)，最近邻与随机插入回路长度差距不大(nn_over_ri=1.2435)，表明问题难度适中。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA虽然全局探索强但收敛较慢，GA2opt增加了计算开销，RI2opt初始解质量不如NN2opt稳定，在2秒时限内NN2opt最可能找到最优或接近最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 140,
+   "total": 906
+  }
+ },
+ "44": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.4772)，最近邻与随机插入初始解质量相同(nn_over_ri=1.0)，表明局部优化潜力大。NN2算法通过多起点策略能快速探索不同初始路径，结合2-opt局部搜索在2秒内极可能找到最优解。GA算法虽全局探索强但收敛慢，GA2opt计算开销大，RI2opt则因初始解质量与NN2opt相当但重启次数多而效率较低。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 134,
+   "total": 901
+  }
+ },
+ "247": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构较为均匀(nn_cv=0.6926)，且nn_spread_ratio=0.5171表明节点分布相对集中，适合NN2opt算法快速收敛。NN2opt通过多起点最近邻构建初始解并2-opt优化，对小规模实例通常能在2秒内找到高质量解。相比之下，GA和GA2opt虽全局探索强，但2秒内可能未充分收敛；RI2opt初始解质量中等(nn_over_ri=1.2884)，不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 141,
+   "total": 910
+  }
+ },
+ "179": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构较为均匀(nn_cv=0.6355)，最近邻与随机插入解质量接近(nn_over_ri=1.0093)，表明问题难度适中。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA虽然全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此规模下不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 131,
+   "total": 900
+  }
+ },
+ "281": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，节点分布相对均匀(nn_cv=0.654)，且最近邻与随机插入解质量接近(nn_over_ri=1.0302)，表明几何结构规整。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中极快收敛到高质量解。GA算法虽探索能力强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此小规模实例中效率不如NN2opt直接的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 140,
+   "total": 907
+  }
+ },
+ "6": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.4554)，且最近邻算法表现良好(nn_tour_len=6.0553)。NN2opt算法通过多起点策略能快速找到高质量初始解，并在2秒内充分进行2-opt局部搜索，对小规模实例通常能快速收敛到最优解。相比之下，GA算法虽全局探索强但收敛速度较慢；GA2opt虽稳健但计算开销大；RI2opt初始解质量不如NN2opt，且重启策略在2秒内难以充分探索。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 143,
+   "total": 912
+  }
+ },
+ "213": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，节点分布相对均匀(nn_cv=0.4821)，且nn_spread_ratio=0.4168表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛至高质量解。RI2opt虽然通过多次重启增加多样性，但初始解质量不如NN2opt稳定；GA和GA2opt由于需要种群进化，在小实例上收敛速度可能不及NN2opt直接搜索。NN2opt的快速回路长度(nn_tour_len=3.6735)与随机插入相当(nn_over_ri=1.0768)，表明其初始解质量已不错，加上2-opt精修，很可能在2秒内找到最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 187,
+   "total": 956
+  }
+ },
+ "145": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.6899)，最近邻与随机插入解质量相当(nn_over_ri=1.0024)，表明问题难度适中。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上极快收敛到高质量解。GA虽然探索能力强但收敛速度较慢；GA2opt虽有局部搜索但计算开销大；RI2opt的随机插入初始解质量不如NN2opt稳定。NN2opt在2秒内几乎肯定能找到最优或近优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 147,
+   "total": 914
+  }
+ },
+ "77": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.5561)，且最近邻算法已给出较优解(5.3161)，随机插入甚至更优(4.2222)。NN2opt通过多起点策略结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。GA虽全局探索强但收敛可能较慢，GA2opt的局部搜索在小规模上优势不明显，RI2opt的随机重启策略不如NN2opt的确定性搜索高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 133,
+   "total": 901
+  }
+ },
+ "111": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=30)，几何结构相对均匀(nn_cv=0.5846)，最近邻与随机插入回路长度接近(nn_over_ri=1.1812)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在2秒内可能无法充分探索。NN2opt在此类中等难度小实例上通常能在2秒内找到接近最优的解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 151,
+   "total": 918
+  }
+ },
+ "43": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=30)，且几何结构相对均匀(nn_cv=0.5983)，最近邻与随机插入解质量接近(nn_over_ri=1.1078)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此规模下不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 131,
+   "total": 899
+  }
+ },
+ "246": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=25)，几何结构较为均匀(nn_cv=0.5607)，节点分布相对集中(nn_spread_ratio=0.5451<1)。NN2算法通过多起点策略能快速构建高质量初始解，结合2-opt局部搜索可在短时间内找到接近最优的解。相比之下，GA算法虽全局探索强但收敛速度较慢；GA2opt虽然稳健但计算开销大；RI2opt初始解质量中等，重启策略在2秒内难以超越NN2opt的效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 133,
+   "total": 900
+  }
+ },
+ "178": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对均匀(nn_cv=0.5974)，适合NN2opt算法快速收敛。NN2opt通过多起点最近邻策略能快速构建高质量初始解，再通过2-opt局部搜索精修，在2秒内很可能找到最优解。相比之下，GA和GA2opt虽然全局探索能力强，但在小实例上收敛速度可能不如NN2opt；RI2opt虽然重启次数多，但初始解质量不如NN2opt，且随机性可能导致结果不稳定。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 134,
+   "total": 897
+  }
+ },
+ "280": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.4766)，且最近邻与随机插入回路长度差异较大(nn_over_ri=1.4147)，表明NN算法可能找到更优初始解。NN2opt通过多起点策略能快速探索不同初始回路，结合2-opt局部搜索，在小规模实例中通常能在2秒内找到高质量解。GA算法虽探索能力强，但小规模下收敛速度可能不及NN2opt；GA2opt增加了局部搜索但计算开销更大；RI2opt初始解质量不如NN，且重启策略在小规模下优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 154,
+   "total": 923
+  }
+ },
+ "212": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.3421)，最近邻与随机插入算法初始解质量相同(nn_over_ri=1.0)，表明结构规整。NN2opt通过多起点策略能快速探索优质解，结合2-opt局部搜索在小规模实例中通常能迅速收敛到最优或接近最优解。GA虽然探索能力强但收敛速度较慢；GA2opt虽有局部搜索但遗传操作开销大；RI2opt初始解质量与NN相当但重启策略不如NN多起点高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 760,
+   "completion": 140,
+   "total": 900
+  }
+ },
+ "144": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.8685)，最近邻算法表现良好(nn_over_ri=1.1598)。NN2opt通过多起点策略能快速探索优质解，2-opt局部搜索在小规模下高效收敛。GA虽全局探索强但收敛慢，GA2opt额外计算开销可能浪费预算，RI2opt初始解质量不如NN且重启策略在小规模下优势不明显。NN2opt能在2秒内高效找到高质量解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 129,
+   "total": 894
+  }
+ },
+ "76": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.59)，最近邻与随机插入解质量接近(nn_over_ri=1.14)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解，2秒内足够完成多次搜索并优化。GA算法虽全局探索强但收敛慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt初始解质量一般且重启策略对小规模问题效率不如NN2opt直接。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 142,
+   "total": 907
+  }
+ },
+ "110": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对均匀(nn_cv=0.5994)，适合NN2opt算法快速收敛。NN2opt通过多起点最近邻策略能快速找到高质量初始解，再通过2-opt局部搜索精修，在2秒内很可能找到最优解。相比之下，GA和GA2opt虽然全局探索能力强，但在小规模实例中收敛速度可能不及NN2opt；RI2opt虽然重启次数多，但初始解质量不如NN2opt，且nn_over_ri=1.1629表明NN策略比RI策略更有效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 147,
+   "total": 914
+  }
+ },
+ "42": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.6849)，且nn_spread_ratio=0.5902表明节点分布适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。NN2opt的初始解质量较好(nn_tour_len=5.3059)，且局部搜索效率高，2秒内足以充分优化。相比之下，GA算法虽全局探索强但收敛较慢；GA2opt虽结合局部搜索但计算开销大；RI2opt初始解质量较低(ri_tour_len=4.4239)，难以在短时间内超越NN2opt。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 169,
+   "total": 933
+  }
+ },
+ "245": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.6525)，最近邻与随机插入解质量相当(nn_over_ri≈1)，表明局部优化潜力大。NN2opt通过多起点最近邻初始化+2-opt局部搜索，能在小规模实例中极快收敛到高质量解。GA虽探索强但收敛慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt初始解质量不占优且重启策略不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 132,
+   "total": 899
+  }
+ },
+ "177": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.5213)，最近邻与随机插入解质量接近(nn_over_ri=1.0581)，表明局部优化可能快速收敛。NN2opt通过多起点策略能有效探索解空间，2-opt局部搜索在小规模实例中通常能快速找到高质量解。GA和GA2opt虽然全局探索能力强，但在小实例中收敛速度可能不如NN2opt。RI2opt虽然重启次数多，但初始解质量中等，在2秒内难以超越NN2opt的效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 144,
+   "total": 909
+  }
+ },
+ "279": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=30)，几何结构相对均匀(nn_cv=0.6071)，最近邻与随机插入解质量接近(nn_over_ri=1.0898)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在2秒内可能无法充分探索。NN2opt的确定性搜索策略特别适合这种规模适中、结构均匀的实例，能在有限时间内找到更优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 157,
+   "total": 924
+  }
+ },
+ "211": {
+  "algorithm": null,
+  "confidence": 0.0,
+  "reason": "API error: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}",
+  "parse_failed": true
+ },
+ "143": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构较为均匀(nn_cv=0.4336)，且nn_spread_ratio=0.6063表明节点分布相对聚集。NN2算法通过多起点最近邻构建初始解并快速2-opt优化，对小规模实例通常能在2秒内找到高质量解。NN2opt的优势在于其快速收敛能力，而GA和GA2opt虽全局探索强但收敛较慢；RI2opt的随机插入初始解质量不如NN2opt稳定，且重启次数有限难以在短时间内超越NN2opt的优化效果。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 144,
+   "total": 909
+  }
+ },
+ "75": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.2627)，且最近邻算法表现良好(nn_over_ri=1.0592)。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。GA算法虽全局探索强但收敛速度较慢；GA2opt增加了计算负担；RI2opt初始解质量不如NN2opt稳定。实例的几何结构适中，NN2opt能在2秒内高效探索并优化解空间。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 139,
+   "total": 904
+  }
+ },
+ "109": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，且几何结构相对集中(nn_spread_ratio=0.5572<1)，表明节点分布较为聚集。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛到高质量解。nn_tour_len(4.7387)与ri_tour_len(3.9583)差距不大，表明初始解质量较好，NN2opt能在此基础上高效优化。GA算法虽全局探索强，但小规模实例下收敛速度可能不及NN2opt；GA2opt增加了计算开销；RI2opt的随机重启策略在此规模下效率不如NN2opt的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 168,
+   "total": 937
+  }
+ },
+ "41": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.4349)，节点分布适中(nn_spread_ratio=0.661)。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能极快收敛到高质量解。随机插入(RI2opt)虽然初始解略优(ri_tour_len=4.49)，但重启次数有限；遗传算法(GA/GA2opt)需要更多时间进化，在2秒内可能无法充分收敛。NN2opt的优势在于利用小规模特性，通过多起点和局部搜索快速找到最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 156,
+   "total": 923
+  }
+ },
+ "292": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对紧凑(nn_spread_ratio=0.5889<1)，且最近邻与随机插入解质量接近(nn_over_ri=1.0343)，表明局部优化潜力大。NN2opt通过多起点最近邻初始化+2-opt精修，能在小规模实例中极快收敛至高质量解。GA虽全局探索强但收敛慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt初始解质量不如NN2opt且重启策略在小规模上优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 142,
+   "total": 908
+  }
+ },
+ "244": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对紧凑(nn_spread_ratio=0.45<1)，且最近邻与随机插入解质量接近(nn_over_ri=1.06)，表明局部优化潜力大。NN2算法通过多起点最近邻初始化+2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在小规模实例中效率不如NN2opt直接的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 138,
+   "total": 901
+  }
+ },
+ "176": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.4952)，最近邻与随机插入解质量接近(nn_over_ri=0.9968)，表明几何结构规整。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽探索能力强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此小规模实例中效率不如NN2opt直接的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 139,
+   "total": 905
+  }
+ },
+ "278": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对均匀(nn_cv=0.5679)，适合NN2opt算法快速收敛。NN2opt通过多起点最近邻构建初始解并应用2-opt局部搜索，能在小规模实例中高效找到高质量解。随机插入(RI2opt)虽然初始解更好(ri_tour_len=4.7774 < nn_tour_len=5.317)，但NN2opt的多起点策略能更快探索解空间。遗传算法(GA/GA2opt)在小规模问题上收敛速度可能不及NN2opt，且2-opt局部搜索已能提供足够的局部优化能力。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 159,
+   "total": 922
+  }
+ },
+ "210": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.5112)，最近邻与随机插入解质量接近(nn_over_ri=1.1355)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽探索能力强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此规模下效率不如NN2opt直接的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 133,
+   "total": 899
+  }
+ },
+ "142": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.5274)，最近邻算法表现良好(nn_tour_len=5.6512)。NN2opt通过多起点策略能快速找到高质量初始解，结合2-opt局部搜索在2秒内极可能收敛到最优解。GA虽然探索能力强但收敛速度较慢；GA2opt增加了局部搜索但计算开销大；RI2opt初始解质量较好但不如NN2opt稳定。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 124,
+   "total": 889
+  }
+ },
+ "74": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例节点数较少(n=25)，几何结构相对均匀(nn_cv=0.4968)，最近邻与随机插入解质量接近(nn_over_ri=1.0188)，表明局部优化潜力大。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛较慢；GA2opt虽有局部搜索但计算开销大；RI2opt初始解质量中等且重启策略不如NN2opt定向高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 770,
+   "completion": 135,
+   "total": 905
+  }
+ },
+ "108": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构较为均匀(nn_cv=0.5005)，且最近邻算法表现不佳(nn_over_ri=1.4645)，表明存在局部最优陷阱。NN2算法通过多起点策略能有效避免局部最优，2-opt局部搜索能快速精修。GA算法虽探索能力强但收敛慢，GA2opt计算开销大，RI2opt初始解质量一般且重启策略对小规模实例效率不高。NN2opt能在2秒内充分探索并找到高质量解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 132,
+   "total": 897
+  }
+ },
+ "40": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.5689)，最近邻算法表现良好(nn_tour_len=3.1374)。NN2opt通过多起点策略能快速探索优质解，结合2-opt局部搜索在2秒内极可能找到最优解。GA虽然探索能力强但小规模下收敛速度可能不及NN2opt；GA2opt增加了计算开销；RI2opt初始解质量较好但不如NN2opt的多起点策略高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 126,
+   "total": 888
+  }
+ },
+ "243": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构较为均匀(nn_cv=0.5271)，且nn_spread_ratio=0.5674表明节点分布相对聚集。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。相比之下，GA和GA2opt虽然全局探索能力强，但在2秒内可能无法充分收敛；RI2opt的随机插入初始解质量中等，且重启策略在n=30时不如NN2opt高效。NN2opt的nn_over_ri=1.0924表明最近邻解质量接近随机插入，结合其快速收敛特性，最适合此实例。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 168,
+   "total": 936
+  }
+ },
+ "175": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构相对均匀(nn_cv=0.4925)，最近邻与随机插入解质量差距较大(nn_over_ri=1.2752)，表明NN初始解质量较好。NN2opt算法通过多起点策略能快速找到高质量初始解，并在2秒内充分进行2-opt局部搜索，对小规模实例通常能快速收敛到最优解。GA虽然全局探索强但收敛速度可能较慢，GA2opt增加了局部搜索但计算开销更大，RI2opt初始解质量不如NN且重启次数有限，在2秒内难以超越NN2opt的效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 155,
+   "total": 920
+  }
+ },
+ "122": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对规则(nn_spread_ratio=0.6211<1，表示节点有一定聚集性)。最近邻算法(nn_tour_len=4.3102)明显优于随机插入(ri_tour_len=5.0763)，表明局部结构良好，NN2opt能快速构建高质量初始解并通过2-opt精细优化。GA和GA2opt虽全局探索强，但小规模下收敛速度可能不及NN2opt；RI2opt初始解质量较差，重启次数有限难以在2秒内超越NN2opt。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 146,
+   "total": 913
+  }
+ },
+ "277": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，节点分布相对均匀(nn_cv=0.3825)，且nn_spread_ratio=0.5891表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能在极短时间内找到高质量解。NN2opt的初始解质量高(nn_tour_len=4.0381)，且局部搜索能力强，能在2秒内快速收敛至最优解附近。相比之下，GA算法虽全局探索强但收敛速度较慢；GA2opt虽结合局部搜索但计算开销大；RI2opt初始解质量中等，重启策略对小规模实例效率不如NN2opt直接。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 169,
+   "total": 936
+  }
+ },
+ "209": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.7143)，最近邻算法初始解质量较好(nn_over_ri=1.071)，NN2opt算法通过多起点策略能快速找到高质量解。GA算法在小规模实例中收敛速度可能不如NN2opt，而GA2opt虽然稳健但计算开销更大。RI2opt的随机插入初始解质量不如NN，且重启策略在2秒内可能无法充分探索。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 123,
+   "total": 885
+  }
+ },
+ "141": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.3832)，最近邻与随机插入回路长度差异适中(nn_over_ri=1.2957)，表明NN算法可能快速找到高质量解。NN2opt通过多起点策略结合2-opt局部搜索，能在小规模实例中极快收敛到接近最优解。GA虽全局探索强但收敛可能较慢；GA2opt虽稳健但计算开销大；RI2opt初始解质量不如NN且重启策略在小规模上优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 136,
+   "total": 899
+  }
+ },
+ "73": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，且几何结构相对均匀(nn_cv=0.6266)，最近邻与随机插入解质量接近(nn_over_ri=1.0261)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此规模下效率不如NN2opt直接的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 137,
+   "total": 903
+  }
+ },
+ "107": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.4338)，且nn_spread_ratio=0.5688表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。RI2opt虽然通过多次重启增加多样性，但初始解质量不如NN2opt稳定；GA和GA2opt在大种群搜索中可能因时间限制无法充分收敛，而NN2opt的确定性搜索更适合此类规模和分布的实例。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 141,
+   "total": 907
+  }
+ },
+ "39": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何分布较为均匀(nn_cv=0.4272)，且nn_spread_ratio=0.6088表明节点分布适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。NN2opt的初始解质量较高(ri_tour_len=4.7887)，单位节点成本低(0.1769)，且2-opt局部搜索能高效改进路径。GA算法虽全局探索强但收敛较慢，GA2opt增加了计算开销，RI2opt初始解质量不如NN2opt稳定，在2秒内NN2opt最可能找到最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 168,
+   "total": 931
+  }
+ },
+ "88": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.4876)，且nn_spread_ratio=0.5762表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能在极短时间内收敛到高质量解。NN_tour_len与RI_tour_len接近(1.0398)，表明初始解质量已较好，NN2opt的局部搜索能快速优化。GA和GA2opt因需要种群进化，在小实例上可能收敛较慢；RI2opt虽有多重启但初始解质量不如NN2opt稳定。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 157,
+   "total": 923
+  }
+ },
+ "242": {
+  "algorithm": null,
+  "confidence": 0.0,
+  "reason": "API error: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}",
+  "parse_failed": true
+ },
+ "174": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.7621)，节点分布中等分散(nn_spread_ratio=0.5344)。NN2算法通过多起点最近邻构建初始解并2-opt优化，对小规模实例能快速收敛到高质量解。NN2opt的优势在于其确定性搜索和局部优化能力，能在2秒内充分探索并优化。GA虽然全局探索强但收敛较慢；GA2opt因包含局部搜索计算开销大；RI2opt初始解质量不如NN2opt稳定，且重启策略在2秒内可能无法充分优化。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 151,
+   "total": 918
+  }
+ },
+ "276": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.2681)，且nn_spread_ratio=0.6004表明节点分布适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能在极短时间内找到高质量解。NN2opt的初始解质量较好(nn_tour_len=4.4978)，且局部搜索能快速改进。GA算法虽全局探索强，但小规模实例中收敛速度可能不如NN2opt；GA2opt增加了计算开销；RI2opt的初始解质量较低(ri_tour_len=3.5786)，且nn_over_ri=1.2568表明NN策略明显优于RI策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 177,
+   "total": 942
+  }
+ },
+ "208": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.6333)，且nn_spread_ratio=0.5765表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模问题能快速收敛至高质量解。NN2opt算法的优势在于其高效的全局探索与局部改进能力，特别适合这种规模的问题。相比之下，GA和GA2opt虽然全局探索能力强，但在小规模问题上收敛速度可能不如NN2opt；RI2opt虽然通过多次重启增加了解的质量，但其初始解质量不如NN2opt，在2秒时间预算内可能无法找到更优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 167,
+   "total": 932
+  }
+ },
+ "140": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.7018)，最近邻算法表现良好(nn_tour_len=4.2751)。NN2opt通过多起点策略能快速探索优质解，结合2-opt局部搜索在短时间内找到高质量回路。GA虽然探索能力强但收敛速度可能较慢；GA2opt虽有局部搜索但计算开销大；RI2opt初始解质量中等，在如此小规模实例中优势不明显。NN2opt在这种规模下通常能在2秒内找到接近最优的解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 139,
+   "total": 908
+  }
+ },
+ "72": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.5282)，最近邻与随机插入解质量接近(nn_over_ri=1.0546)，表明几何结构规整。NN2opt通过多起点策略能快速探索优质解，2-opt局部搜索在小规模实例中效率极高，2秒内极可能收敛到最优解。GA虽探索强但收敛慢，GA2opt在小实例中优势不明显，RI2opt重启次数多但初始解质量不如NN2opt稳定。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 135,
+   "total": 898
+  }
+ },
+ "106": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对规则(nn_spread_ratio=0.6229<1表明节点聚集，nn_cv=0.5203变异系数中等)。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛到高质量解。RI2opt虽然通过重启增加多样性，但初始解质量不如NN2opt稳定；GA和GA2opt虽全局探索强，但2秒内可能未充分收敛，且对小实例优势不明显。NN2opt的快速收敛特性最适合此规模和几何特征。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 148,
+   "total": 912
+  }
+ },
+ "38": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对均匀(nn_cv=0.5414)，适合NN2opt算法的多起点策略快速收敛。nn_spread_ratio=0.5942表明节点分布相对聚集，有利于最近邻策略构建高质量初始解。NN2opt通过多起点2-opt优化能在短时间内找到接近最优的解。GA虽然全局探索强但小规模下收敛速度可能不及NN2opt；GA2opt增加了局部搜索但计算开销更大；RI2opt的随机插入初始解质量不如NN2opt的最近邻策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 143,
+   "total": 906
+  }
+ },
+ "241": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，几何结构相对均匀(nn_cv=0.2701)，节点分布适中(nn_spread_ratio=0.6123)。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。随机插入(RI2opt)虽然初始解更优(ri_tour_len=3.8534 < nn_tour_len=4.7194)，但NN2opt的多起点策略能更全面探索解空间。遗传算法(GA/GA2opt)在小规模实例中收敛速度较慢，2秒内可能无法充分优化。NN2opt的确定性搜索策略更适合这种小规模、结构相对均匀的实例。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 178,
+   "total": 940
+  }
+ },
+ "173": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.5922)，最近邻算法表现良好(nn_over_ri=0.8777)。NN2opt通过多起点策略能快速探索优质解，2-opt局部搜索可高效优化。GA虽全局探索强但小规模下收敛可能较慢；GA2opt计算开销更大；RI2opt初始解质量不如NN2opt，在2秒内难以超越NN2opt的优化效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 125,
+   "total": 887
+  }
+ },
+ "71": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构相对均匀(nn_cv=0.6532)，最近邻算法表现良好(nn_tour_len=5.6582)。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。随机插入(ri_tour_len=4.7049)表现更好表明初始解质量较高，NN2opt能有效利用这一优势。GA和GA2opt虽然全局探索能力强，但在2秒内可能无法充分收敛；RI2opt虽然重启次数多，但初始解质量不如NN2opt的最近邻策略稳定，因此NN2opt最可能在2秒内找到最短回路。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 172,
+   "total": 935
+  }
+ },
+ "139": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.4003)，且nn_spread_ratio=0.5641表明节点聚集程度适中。NN2算法通过多起点最近邻初始化+2-opt局部搜索，能在小规模实例中快速收敛到高质量解。NN2opt的初始解质量较好(nn_tour_len=5.9223)，且2-opt局部搜索能有效改进回路。GA算法虽全局探索强但收敛较慢；GA2opt虽结合局部搜索但计算开销大；RI2opt初始解质量中等(ri_tour_len=5.2698)且重启策略不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 165,
+   "total": 930
+  }
+ },
+ "275": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=30)，几何结构相对均匀(nn_cv=0.6084)，最近邻算法初始解质量高(nn_over_ri=0.9725)，且单位节点成本低(0.1715)。NN2算法通过多起点策略能快速找到优质初始解，2-opt局部搜索在2秒内足以充分优化。GA算法虽全局探索强但收敛较慢；GA2opt虽结合局部搜索但计算开销大；RI2opt初始解质量不如NN，重启策略在小型实例中效率较低。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 138,
+   "total": 905
+  }
+ },
+ "207": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=30)，且几何结构相对规则(nn_spread_ratio=0.5421<1，节点聚集)，nn_cv=0.5609表明节点分布均匀性适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛到高质量解。RI2opt虽有多重启优势，但初始解质量不如NN2opt稳定；GA和GA2opt的全局探索在小规模实例中可能收敛较慢，难以在2秒内超越NN2opt的局部搜索效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 143,
+   "total": 911
+  }
+ },
+ "105": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，几何结构相对均匀(nn_cv=0.395)，最近邻与随机插入解质量接近(nn_over_ri=1.0682)，表明局部优化潜力大。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛较慢；GA2opt虽结合局部搜索但计算开销大；RI2opt随机性高且初始解质量一般，均不如NN2opt在此规模下高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 139,
+   "total": 907
+  }
+ },
+ "37": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，且几何结构相对均匀(nn_cv=0.372)，最近邻算法(nn_over_ri=1.2207)与随机插入算法(ri_tour_len=3.6046)的初始解质量接近，表明问题难度适中。NN2opt算法通过多起点最近邻构建初始解并应用2-opt局部搜索，在小规模实例中能快速收敛到高质量解。GA算法虽然全局探索能力强，但2秒内可能未充分收敛；GA2opt因包含局部搜索会增加计算开销；RI2opt的随机重启策略在n=20时效率不如NN2opt直接。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 761,
+   "completion": 159,
+   "total": 920
+  }
+ },
+ "240": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.4248)，最近邻算法(nn_tour_len=3.9417)与随机插入(ri_tour_len=3.5877)性能接近(nn_over_ri=1.0986)，表明局部优化空间有限。NN2opt通过多起点策略能快速探索解空间，2-opt局部搜索在小规模实例中效率极高，能在2秒内找到高质量解。GA和GA2opt因种群进化开销可能无法充分收敛，RI2opt虽有多重启但初始解质量不如NN2opt稳定。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 153,
+   "total": 921
+  }
+ },
+ "172": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.5477)，最近邻算法初始解质量高(nn_over_ri=0.9279)，且nn_spread_ratio=0.5382表明节点分布适中。NN2算法通过多起点策略能快速探索优质解，结合2-opt局部搜索在小规模实例上通常能在2秒内找到最优或接近最优解。GA算法虽全局探索强但收敛较慢，GA2opt计算开销大，RI2opt初始解质量不如NN，均不适合这种小规模且结构规整的实例。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 150,
+   "total": 916
+  }
+ },
+ "274": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.4391)，最近邻与随机插入解质量接近(nn_over_ri=1.0611)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛至高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt随机性大且初始解质量一般，不如NN2opt高效稳定。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 136,
+   "total": 899
+  }
+ },
+ "206": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对规则(nn_cv=0.3941，变异系数中等)，最近邻与随机插入解质量接近(nn_over_ri=1.0831)，表明局部优化空间有限。NN2算法通过多起点策略能快速找到高质量初始解，配合2-opt局部搜索在2秒内极可能收敛到最优解。GA算法虽全局探索强但收敛慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt随机性大且初始解质量不如NN2opt稳定。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 142,
+   "total": 908
+  }
+ },
+ "138": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.4504)，最近邻算法表现良好(nn_over_ri=1.1275)。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt初始解质量不如NN且重启策略在此规模下优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 126,
+   "total": 890
+  }
+ },
+ "70": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.4512)，且最近邻与随机插入回路长度差异较大(nn_over_ri=1.3151)，表明NN算法可能找到较优初始解。NN2opt通过多起点策略结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。GA虽然全局探索强但收敛可能较慢，GA2opt计算开销更大，RI2opt初始解质量不如NN2opt，在2秒预算内NN2opt最可能找到最短回路。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 141,
+   "total": 905
+  }
+ },
+ "104": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.6474)，最近邻与随机插入解质量接近(nn_over_ri=1.0063)，表明局部优化潜力大。NN2opt通过多起点策略能快速探索优质初始解，2-opt局部搜索在小规模下能高效精修，2秒内极可能收敛到最优解。GA虽探索强但收敛慢，GA2opt计算开销大，RI2opt初始解质量不占优且重启策略不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 137,
+   "total": 904
+  }
+ },
+ "36": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.6685)，最近邻与随机插入解质量接近(nn_over_ri=1.0602)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上极快收敛到高质量解。GA算法虽探索能力强但收敛速度较慢；GA2opt虽稳健但计算开销大；RI2opt初始解质量一般且重启策略不如NN2opt高效。NN2opt在2秒内几乎肯定能找到最优或接近最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 770,
+   "completion": 148,
+   "total": 918
+  }
+ },
+ "239": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何分布相对均匀(nn_cv=0.3491)，最近邻与随机插入解质量接近(nn_over_ri=1.0504)，表明结构规整。NN2opt通过多起点策略能快速找到高质量初始解，2-opt局部搜索在小规模实例中收敛极快。GA虽探索强但需时间收敛，GA2opt计算开销大；RI2opt初始解质量不如NN2opt且重启次数有限，在2秒内难以超越NN2opt的效率与精度。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 138,
+   "total": 901
+  }
+ },
+ "171": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.5574)，且nn_spread_ratio=0.5134表明节点聚集程度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。RI2opt虽然通过多次重启探索不同区域，但初始解质量不如NN2opt稳定；GA和GA2opt在大种群搜索中可能收敛较慢，难以在2秒内充分优化。NN2opt的确定性搜索策略特别适合这种规模适中、分布均匀的实例，能高效利用时间预算找到接近最优的解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 159,
+   "total": 925
+  }
+ },
+ "273": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，且几何结构相对均匀(nn_cv=0.6013)，最近邻与随机插入解质量相近(nn_over_ri=1.0087)，表明问题难度适中。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此规模下效率不如NN2opt直接。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 135,
+   "total": 900
+  }
+ },
+ "205": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，节点分布相对均匀(nn_cv=0.4424)，最近邻算法已能获得较好初始解(nn_tour_len=4.7213)。NN2算法通过多起点策略结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。GA2opt虽然稳健但全局搜索在小规模上可能收敛较慢；GA缺乏局部搜索难以精修；RI2opt初始解质量较低(ri_tour_len=3.9883)，需要更多重启次数才能达到NN2opt的效果。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 141,
+   "total": 904
+  }
+ },
+ "137": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，节点分布相对均匀(nn_cv=0.3783)，且最近邻算法表现良好(nn_over_ri=1.1892)。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。GA算法虽然全局探索能力强，但在小实例中收敛速度可能不及NN2opt；GA2opt增加了计算开销，可能无法在2秒内充分利用；RI2opt的随机插入初始解质量不如NN算法，且重启策略在小规模上优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 143,
+   "total": 908
+  }
+ },
+ "69": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，节点分布相对均匀(nn_cv=0.4771)，且nn_spread_ratio=0.5461表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛到高质量解。随机插入(ri_tour_len=3.5624)明显优于最近邻(nn_tour_len=5.1317)，表明NN初始解质量不高，但NN2opt的多起点策略能弥补这一劣势。GA和GA2opt虽全局探索强，但2秒内可能未充分收敛；RI2opt重启次数多，但对小规模实例不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 171,
+   "total": 937
+  }
+ },
+ "103": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何分布相对均匀(nn_cv=0.4979)，最近邻算法表现良好(nn_over_ri=0.8928)。NN2opt算法通过多起点策略能快速找到高质量初始解，结合2-opt局部搜索能在短时间内有效优化。GA算法虽全局探索强但收敛较慢；GA2opt虽有局部搜索但计算开销大；RI2opt初始解质量较差，重启策略在2秒内难以超越NN2opt的效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 128,
+   "total": 896
+  }
+ },
+ "35": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.7061)，且nn_spread_ratio=0.5606表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛到高质量解。NN2opt的初始解质量较高(nn_tour_len=4.7115)，且与随机插入解相当(nn_over_ri=0.9809)，表明几何结构适合贪心算法。GA和GA2opt虽然全局探索能力强，但在小规模实例中收敛速度可能不如NN2opt；RI2opt虽然多次重启，但初始解质量不如NN2opt，且2-opt改进空间有限。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 178,
+   "total": 946
+  }
+ },
+ "4": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.5437)，最近邻与随机插入解质量接近(nn_over_ri=1.137)，表明局部优化可能快速提升解质量。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中极快收敛至高质量解。GA算法虽探索强但收敛慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt初始解质量一般且重启策略在小规模上不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 138,
+   "total": 901
+  }
+ },
+ "5": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.452)，最近邻算法初始解质量较好(nn_tour_len=5.4607)，且nn_spread_ratio=0.5876表明节点分布适中。NN2算法通过多起点策略能快速探索优质解，2-opt局部搜索在小规模实例中能高效优化。GA算法虽探索能力强但收敛速度可能不及NN2opt；GA2opt增加了计算开销；RI2opt初始解质量较低(ri_tour_len=3.9514)，在2秒内难以超越NN2opt的优化效果。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 154,
+   "total": 919
+  }
+ },
+ "238": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例节点数n=25属于小规模问题，几何结构相对均匀（nn_cv=0.5688，nn_spread_ratio=0.5005），适合NN2opt算法快速收敛。NN2opt通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上极快找到高质量解。随机插入(RI2opt)虽然初始解更优(ri_tour_len=4.9442 < nn_tour_len=5.6699)，但NN2opt的局部搜索能力强于RI2opt。遗传算法(GA/GA2opt)在小规模问题上收敛速度可能不及NN2opt，且缺乏NN2opt的多起点优势。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 169,
+   "total": 935
+  }
+ },
+ "170": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对均匀(nn_cv=0.5201，nn_spread_ratio=0.5161)，表明城市分布较为规则。NN2算法通过多起点最近邻构建初始解并应用2-opt局部搜索，对小规模实例能快速收敛到高质量解。NN2opt的优势在于其高效的全局探索与局部精修结合，特别适合这种规模适中且分布相对均匀的实例。相比之下，GA和GA2opt虽然全局探索能力强，但在小实例上可能收敛速度较慢；RI2opt的随机重启策略虽然稳健，但初始解质量不如NN2opt，且在小实例上优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 164,
+   "total": 926
+  }
+ },
+ "272": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.7305)，且最近邻与随机插入解质量接近(nn_over_ri=1.0451)，表明几何结构规整。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中极快收敛到高质量解。GA虽然探索能力强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此小规模实例中效率不如NN2opt的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 761,
+   "completion": 139,
+   "total": 900
+  }
+ },
+ "204": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.5134)，最近邻算法初始解质量高(nn_over_ri=0.9786)，且nn_spread_ratio=0.4249表明节点分布适中。NN2opt算法通过多起点策略能快速找到高质量初始解，2-opt局部搜索在短时间内可高效优化。GA算法虽全局探索强但小实例收敛未必最快；GA2opt计算开销大；RI2opt初始解质量不如NN2opt，在2秒内难以超越NN2opt的优化效果。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 145,
+   "total": 910
+  }
+ },
+ "136": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对紧凑(nn_spread_ratio=0.4545<1表明节点聚集)，且最近邻算法已给出较优解(nn_tour_len=2.9398，nn_over_ri=0.8581)。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA虽然全局探索强但收敛速度较慢；GA2opt虽有局部搜索但种群初始化耗时；RI2opt初始解质量较差且重启次数有限，在2秒内难以超越NN2opt的效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 156,
+   "total": 923
+  }
+ },
+ "68": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.6214)，最近邻与随机插入解质量接近(nn_over_ri=1.044)，表明局部优化可能快速找到高质量解。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，对小实例能极快收敛到接近最优解。GA算法虽全局探索强但收敛慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此小规模实例中效率不如NN2opt直接的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 140,
+   "total": 905
+  }
+ },
+ "102": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对规则(nn_spread_ratio=0.5147<1表明节点聚集，nn_cv=0.4867表明中等均匀性)。NN2opt算法通过多起点最近邻策略能快速构建高质量初始解，配合2-opt局部搜索在2秒内极可能找到最优解。相比之下，GA算法虽探索能力强但收敛较慢；GA2opt虽有局部搜索但全局搜索效率不如NN2opt对小实例；RI2opt初始解质量较低(nn_over_ri=1.313表明NN明显优于RI)，重启策略在短时间内难以超越NN2opt的效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 159,
+   "total": 923
+  }
+ },
+ "34": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，节点分布相对均匀(nn_cv=0.4436)，且最近邻与随机插入解质量接近(nn_over_ri=1.0184)，表明几何结构规整。NN2opt通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA虽全局探索强但收敛较慢，GA2opt因包含局部搜索计算开销大，RI2opt随机重启策略在此规模下效率不及NN2opt的确定性多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 137,
+   "total": 902
+  }
+ },
+ "237": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，几何结构相对均匀(nn_cv=0.3877)，最近邻与随机插入解质量接近(nn_over_ri=1.0176)，表明局部优化空间有限。NN2算法通过多起点策略能快速探索优质解，2-opt局部搜索在小规模实例中收敛极快。GA算法虽全局探索强但收敛慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt随机性高且初始解质量不占优，在2秒内难以超越NN2opt的稳定高效表现。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 144,
+   "total": 912
+  }
+ },
+ "169": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.4749)，最近邻与随机插入解质量接近(nn_over_ri=1.014)，表明局部优化空间有限。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中极快收敛到高质量解。GA虽全局探索强但收敛慢，GA2opt的局部搜索在小实例中优势不明显，RI2opt的随机重启策略不如NN2opt的定向搜索高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 133,
+   "total": 900
+  }
+ },
+ "271": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.6966)，且nn_spread_ratio=0.5472表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解并快速2-opt优化，对小规模实例能在极短时间内找到高质量解。NN_tour_len(5.5096)与RI_tour_len(5.1626)接近，表明初始解质量相当，但NN2opt的局部搜索效率更高。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索计算开销大，RI2opt的随机重启策略在2秒内可能无法充分探索。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 165,
+   "total": 933
+  }
+ },
+ "203": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构较为均匀(nn_cv=0.5298)，最近邻与随机插入解质量接近(nn_over_ri=1.0527)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽全局探索强但收敛较慢；GA2opt虽结合局部搜索但计算开销大；RI2opt初始解质量中等且重启策略不如NN2opt高效。NN2opt在此类中等难度、规模适中的问题上最可能在2秒内找到最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 153,
+   "total": 920
+  }
+ },
+ "135": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例节点数n=30属于小规模问题，几何结构显示中等分散度(nn_spread_ratio=0.4654)，最近邻与随机插入解质量接近(nn_over_ri=1.0289)，表明结构相对规整。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛至高质量解。GA算法虽全局探索强但收敛可能较慢；GA2opt虽包含局部搜索但计算开销大；RI2opt随机重启策略在此规模下不如NN2opt高效。NN2opt在此类中等分散度的小实例上最可能在2秒内找到最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 162,
+   "total": 930
+  }
+ },
+ "67": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.3856)，且nn_spread_ratio=0.5802表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解并应用2-opt局部搜索，对小规模实例能快速收敛到高质量解。nn_tour_len与ri_tour_len非常接近(1.0084)，表明初始解质量已相当不错，NN2opt能在此基础上高效优化。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此规模下不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 160,
+   "total": 926
+  }
+ },
+ "101": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.4672)，最近邻与随机插入解质量接近(nn_over_ri=1.0413)，表明局部优化潜力大。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽探索能力强但收敛较慢；GA2opt虽包含局部搜索但计算开销大；RI2opt初始解质量一般且重启策略不如NN2opt高效。NN2opt在2秒内极可能找到最优或接近最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 149,
+   "total": 914
+  }
+ },
+ "33": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.6957)，最近邻算法表现良好(nn_tour_len=5.0509)。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。GA2opt虽然稳健但全局搜索在小实例中可能过度；GA缺乏局部搜索难以精修；RI2opt初始解质量较低(ri_tour_len=3.7355)，重启策略在小规模下效率不如NN2opt的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 142,
+   "total": 911
+  }
+ },
+ "236": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.5333)，最近邻与随机插入解质量接近(nn_over_ri=1.0874)，表明局部优化空间有限。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽探索能力强但收敛速度较慢；GA2opt虽有局部搜索但计算开销大；RI2opt随机性高且初始解质量一般，在2秒内难以超越NN2opt的效率与精度。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 143,
+   "total": 911
+  }
+ },
+ "168": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例节点数n=15属于小规模问题，且nn_spread_ratio=0.5808<1表明节点分布相对聚集，nn_cv=0.3876显示几何结构较为规整。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模规整问题能极快收敛到高质量解。NN2opt的劣势在于对大规模问题效率下降，但此处n=15非常适合。GA和GA2opt虽全局探索强，但2秒内可能未充分收敛；RI2opt初始解质量中等，不如NN2opt对小规模问题高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 154,
+   "total": 918
+  }
+ },
+ "270": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.5121)，且nn_spread_ratio=0.5149表明节点分布较为聚集。NN2opt算法通过多起点最近邻构建初始解并快速进行2-opt局部搜索，对小规模实例能在极短时间内找到高质量解。相比之下，GA和GA2opt虽然全局探索能力强，但在小实例上收敛速度可能较慢；RI2opt虽然重启次数多，但初始解质量不如NN2opt稳定，且nn_over_ri=1.2116表明NN初始解质量优于RI，使得NN2opt更具优势。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 154,
+   "total": 918
+  }
+ },
+ "202": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.5152)，最近邻算法初始解质量高(nn_over_ri=0.9559)，且单位节点成本低(0.1645)。NN2算法通过多起点策略结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽探索能力强但收敛较慢；GA2opt虽稳健但计算开销大；RI2opt初始解质量不如NN，重启策略在小规模上优势不明显。NN2opt在2秒内极可能找到最优或接近最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 148,
+   "total": 914
+  }
+ },
+ "134": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构较为规则(nn_cv=0.3049，变异系数低，分布均匀)，nn_spread_ratio=0.5406表明节点分布相对集中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模规则实例能快速收敛至高质量解。NN2opt的初始解质量较好(nn_tour_len=4.6887)，且局部搜索效率高，在2秒内极可能找到最优解。相比之下，GA算法虽全局探索强但收敛较慢；GA2opt虽结合局部搜索但计算开销大；RI2opt初始解质量中等(ri_tour_len=4.2288)，不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 179,
+   "total": 942
+  }
+ },
+ "66": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对均匀(nn_cv=0.6269)，最近邻与随机插入解质量接近(nn_over_ri=1.0315)，表明局部优化潜力大。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛较慢；GA2opt虽结合局部搜索但计算开销大；RI2opt初始解质量中等且重启策略不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 135,
+   "total": 903
+  }
+ },
+ "100": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.6053)，节点分布适中(nn_spread_ratio=0.5331)，NN2opt算法能快速构建高质量初始解并通过多起点2-opt高效优化。NN算法初始解质量与RI相当(nn_over_ri=1.0262)，但NN2opt能更系统地探索局部最优。GA算法虽全局探索强，但小规模下收敛速度可能不及NN2opt；GA2opt虽有局部搜索，但计算开销更大；RI2opt重启策略在此规模下效率不如NN2opt的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 153,
+   "total": 921
+  }
+ },
+ "32": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.4535)，最近邻算法初始解质量高(nn_over_ri=0.9574)，且nn_spread_ratio=0.5896表明节点分布适中。NN2算法通过多起点策略能快速探索优质解，结合2-opt局部搜索在2秒内极可能找到最优解。GA算法虽全局探索强但小实例收敛慢；GA2opt因局部搜索增加计算开销可能超时；RI2opt初始解质量不如NN且重启次数有限，难以在短时间内超越NN2opt。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 151,
+   "total": 918
+  }
+ },
+ "235": {
+  "algorithm": null,
+  "confidence": 0.0,
+  "reason": "API error: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}",
+  "parse_failed": true
+ },
+ "167": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.626)，且nn_spread_ratio=0.5893表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛到高质量解。RI2opt虽有多重重启但初始解质量一般；GA算法虽全局探索强但收敛速度可能不及NN2opt；GA2opt虽结合局部搜索但对小实例优势不明显。NN2opt的快速构建与局部精修特性最适合此规模与几何特征的实例。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 147,
+   "total": 913
+  }
+ },
+ "269": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，几何结构相对均匀(nn_cv=0.5747)，且最近邻与随机插入解质量接近(nn_over_ri=1.1619)，表明局部优化可能快速找到高质量解。NN2算法通过多起点最近邻初始化并应用2-opt局部搜索，能在小规模实例中极快收敛到接近最优解。GA算法虽全局探索强但收敛慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在小规模实例中效率不如NN2opt直接的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 143,
+   "total": 910
+  }
+ },
+ "201": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，且几何结构相对集中(nn_spread_ratio=0.5366<1)，最近邻算法初始解质量较好(nn_tour_len=4.32)。NN2算法通过多起点策略能快速探索优质解，结合2-opt局部搜索可在2秒内高效收敛至高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机插入初始解质量不如NN2opt稳定，且重启策略在小规模实例中优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 139,
+   "total": 901
+  }
+ },
+ "133": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.7515)，最近邻算法表现良好(nn_tour_len=4.7)。NN2opt算法通过多起点策略能快速探索优质解，结合2-opt局部搜索可在2秒内高效收敛至接近最优解。GA算法虽全局探索强但小实例收敛速度可能不及NN2opt；GA2opt虽稳健但NN2opt在小规模上更快；RI2opt初始解质量较低(ri_tour_len=3.7031)，不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 143,
+   "total": 909
+  }
+ },
+ "65": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，节点分布相对集中(nn_spread_ratio=0.5789<1)，几何结构较为规整(nn_cv=0.8958)。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。NN2opt的局部搜索能力强，适合这种规模且结构相对规整的实例。相比之下，GA和GA2opt虽然全局探索能力强，但在小实例中收敛速度可能不如NN2opt；RI2opt的随机重启策略虽然多样，但初始解质量不如NN2opt，在2秒内难以超越NN2opt的优化效果。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 163,
+   "total": 927
+  }
+ },
+ "99": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构较为均匀(nn_cv=0.6335)，最近邻与随机插入解质量接近(nn_over_ri=1.1696)，表明局部优化空间有限。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽探索能力强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此规模下效率不及NN2opt的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 134,
+   "total": 900
+  }
+ },
+ "31": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何分布较为均匀(nn_cv=0.8277)，且nn_spread_ratio=0.528表明节点分布相对聚集。NN2算法通过多起点最近邻构建初始解并应用2-opt局部搜索，能在小规模实例中快速收敛到高质量解。RI2opt虽然通过多次重启增加多样性，但初始解质量不如NN2opt稳定；GA和GA2opt在大种群搜索中可能收敛较慢，难以在2秒内充分优化。NN2opt的局部搜索能力强，特别适合这种规模适中、分布均匀的实例。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 149,
+   "total": 916
+  }
+ },
+ "234": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何分布相对均匀(nn_cv=0.4517)，且最近邻与随机插入解质量接近(nn_over_ri=1.0853)，表明局部优化空间有限。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt的随机重启策略在2秒内难以充分探索。NN2opt在此类中小规模、几何均匀实例中表现最优，能在有限时间内找到接近最优的解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 159,
+   "total": 926
+  }
+ },
+ "166": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构较为规整，nn_spread_ratio(0.5569)和nn_cv(0.5824)表明节点分布相对均匀，没有极端聚集或分散。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。NN2opt的优势在于其高效的全局探索与局部改进能力，特别适合这种规模适中且结构规整的实例。相比之下，GA和GA2opt虽然全局探索能力强，但在小实例中可能因种群初始化和迭代开销而收敛较慢；RI2opt的随机插入策略虽然初始解质量较好，但不如NN2opt的多起点策略稳定高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 179,
+   "total": 948
+  }
+ },
+ "224": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.205)，且nn_spread_ratio=0.6039表明节点聚集程度适中。NN2opt算法通过多起点最近邻构建初始解并快速进行2-opt局部搜索，对于小规模实例能在极短时间内找到高质量解。相比之下，GA和GA2opt虽然全局探索能力强，但在小实例上收敛速度可能不如NN2opt；RI2opt虽然重启次数多，但初始解质量不如NN2opt，且在小实例上优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 137,
+   "total": 901
+  }
+ },
+ "268": {
+  "algorithm": null,
+  "confidence": 0.0,
+  "reason": "API error: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}",
+  "parse_failed": true
+ },
+ "200": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.3342)，且nn_spread_ratio=0.6045表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。相比之下，GA算法虽全局探索强但收敛速度较慢；GA2opt虽有局部搜索但计算开销大；RI2opt的随机插入初始解质量不如NN2opt稳定。NN2opt在2秒内极可能找到最优或接近最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 770,
+   "completion": 145,
+   "total": 915
+  }
+ },
+ "132": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.5505)，最近邻算法初始解质量较好(ri_tour_len=3.0663)，NN2opt通过多起点策略能快速探索解空间并利用2-opt局部搜索精修，极可能在2秒内找到最优解。GA算法虽探索能力强但收敛较慢，GA2opt增加了局部搜索但计算开销大，RI2opt初始解质量不如NN2opt且重启次数有限，在如此小规模实例中优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 136,
+   "total": 901
+  }
+ },
+ "64": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.6917)，且nn_spread_ratio=0.5193表明节点分布较为聚集。NN2opt算法通过多起点最近邻策略能快速构建高质量初始解，配合2-opt局部搜索能在小规模实例中极快收敛至最优解。相比之下，GA和GA2opt虽然全局探索能力强，但在小实例中收敛速度可能不及NN2opt；RI2opt虽然重启次数多，但初始解质量不如NN2opt，且在小规模上优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 142,
+   "total": 909
+  }
+ },
+ "98": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=25)，几何结构相对均匀(nn_cv=0.5993)，最近邻算法表现良好(nn_over_ri=1.1309)，表明NN2opt能快速找到高质量初始解并通过2-opt局部搜索快速收敛。NN2opt的多起点策略能覆盖不同区域，避免陷入局部最优。GA虽然探索能力强，但2秒内可能未充分收敛；GA2opt计算开销更大；RI2opt初始解质量不如NN，重启策略在有限时间内效率较低。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 760,
+   "completion": 130,
+   "total": 890
+  }
+ },
+ "30": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对规则(nn_spread_ratio=0.5144<1，表示节点聚集)，nn_cv=0.6744表明节点分布均匀性适中。NN2opt算法通过多起点最近邻策略能快速构建高质量初始解，配合2-opt局部搜索在2秒内极可能找到最优解。GA算法虽全局探索强但收敛速度较慢；GA2opt虽有局部搜索但计算开销大；RI2opt初始解质量不如NN2opt且重启策略效率低。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 138,
+   "total": 906
+  }
+ },
+ "233": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.5148)，最近邻算法表现良好(nn_over_ri=1.0615)。NN2opt算法通过多起点最近邻构建初始解并快速进行2-opt局部搜索，能在极短时间内找到高质量解。GA2opt虽然稳健但需要更多时间收敛；GA算法缺乏局部搜索，难以快速精修；RI2opt初始解质量不如NN2opt，且重启次数有限。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 124,
+   "total": 890
+  }
+ },
+ "165": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，几何结构相对紧凑(nn_spread_ratio=0.4498<1)，最近邻算法已能构建高质量初始回路(nn_tour_len=3.4658)，且与随机插入解质量相当(nn_over_ri=0.9572)。NN2算法通过多起点策略结合2-opt局部搜索，能在2秒内快速收敛至高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt初始解质量不如NN2opt且重启策略在此小规模实例中优势不明显。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 151,
+   "total": 916
+  }
+ },
+ "267": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.5878)，且nn_spread_ratio=0.5303表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解并应用2-opt局部搜索，对小规模实例能快速收敛到高质量解。GA2opt虽然全局探索能力强，但2秒内可能未充分收敛；GA缺乏局部搜索，精度不足；RI2opt初始解质量中等，重启策略在n=30时不如NN2opt高效。NN2opt的快速构建与局部改进结合最适合此类规模和几何特征的实例。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 152,
+   "total": 921
+  }
+ },
+ "199": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构相对均匀(nn_cv=0.4862)，且nn_spread_ratio=0.5684表明节点分布较为聚集，适合NN2opt算法快速收敛。NN2opt通过多起点最近邻构建初始解并2-opt优化，对小规模实例能在极短时间内找到高质量解。相比之下，GA虽全局探索强但收敛较慢；GA2opt虽结合局部搜索但对小实例优势不明显；RI2opt初始解质量中等，不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 133,
+   "total": 901
+  }
+ },
+ "131": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=30)，几何结构相对均匀(nn_cv=0.4174)，最近邻算法表现良好(nn_tour_len=6.1708)。NN2opt通过多起点策略结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。GA2opt虽然稳健但遗传操作耗时；GA缺乏局部搜索难以精修；RI2opt初始解质量较低(ri_tour_len=4.6146)，需要更多重启次数才能达到NN2opt的精度。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 131,
+   "total": 897
+  }
+ },
+ "63": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构较为均匀(nn_cv=0.3748)，最近邻与随机插入解质量接近(nn_over_ri=1.1383)，表明局部优化潜力大。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解，2秒内足够完成多次优化迭代。GA算法虽全局探索强但收敛较慢；GA2opt虽有局部搜索但计算开销大；RI2opt初始解质量一般且重启策略不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 141,
+   "total": 906
+  }
+ },
+ "97": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.4431)，最近邻与随机插入解质量接近(nn_over_ri=1.0138)，表明问题难度适中。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上极快收敛到高质量解。GA虽然探索能力强但收敛速度较慢，GA2opt增加了计算开销，RI2opt的随机重启策略在此规模下不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 128,
+   "total": 893
+  }
+ },
+ "29": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，几何结构相对均匀(nn_cv=0.516)，最近邻与随机插入解质量接近(nn_over_ri=1.0996)，表明局部优化空间有限。NN2算法通过多起点策略能快速探索解空间，结合2-opt局部搜索，在2秒内极可能找到高质量解。GA算法虽全局探索强但收敛较慢；GA2opt因局部搜索增加计算开销可能不够充分；RI2opt的随机重启策略在此规模下不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 136,
+   "total": 901
+  }
+ },
+ "3": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构相对均匀(nn_cv=0.6327)，最近邻算法表现良好(nn_over_ri=1.0967)。NN2opt通过多起点策略能快速找到高质量初始解，结合2-opt局部搜索能在2秒内高效收敛至较优解。GA虽然探索能力强但收敛速度较慢，GA2opt增加了计算开销，RI2opt初始解质量不如NN2opt稳定，在时间有限情况下NN2opt最可能获得最短回路。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 132,
+   "total": 898
+  }
+ },
+ "232": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.5646)，最近邻算法表现良好(nn_over_ri=0.8817)。NN2opt通过多起点策略能快速探索解空间，结合2-opt局部搜索在2秒内极可能找到最优解。GA虽然探索能力强但小规模下收敛速度可能不及NN2opt；GA2opt增加了计算负担可能无法充分利用2秒；RI2opt初始解质量较差(ri_tour_len=3.2504)，重启策略在如此小规模下效率不高。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 761,
+   "completion": 143,
+   "total": 904
+  }
+ },
+ "164": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对紧凑(nn_spread_ratio=0.6358<1)，变异系数中等(nn_cv=0.4801)，表明城市分布有一定规律但不极端。NN2opt算法通过多起点最近邻初始化+2-opt局部搜索，对小规模实例能在极短时间内找到高质量解。NN2opt的优势在于其快速收敛性，2秒内足以进行多次起点尝试和充分局部优化。相比之下，GA和GA2opt虽然全局探索能力强，但在小实例上收敛速度可能不如NN2opt；RI2opt虽然重启次数多，但初始解质量不如NN2opt，且2秒内难以超越NN2opt的局部搜索效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 171,
+   "total": 938
+  }
+ },
+ "266": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.4938)，且nn_spread_ratio=0.5499表明节点分布适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。RI2opt虽然通过多次重启探索不同解空间，但在小规模实例中优势不明显；GA和GA2opt的全局探索在小规模问题中可能收敛较慢，难以在2秒内超越NN2opt的局部搜索效率。NN2opt的nn_over_ri=1.2548表明最近邻初始解质量尚可，结合2-opt优化能快速找到更优回路。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 171,
+   "total": 937
+  }
+ },
+ "198": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，节点分布相对均匀(nn_cv=0.5969)，且最近邻算法已能获得高质量初始解(nn_tour_len=4.1449，仅比随机插入差3.6%)。NN2算法通过多起点策略结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在小规模实例中效率不如NN2opt直接的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 140,
+   "total": 906
+  }
+ },
+ "130": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.6144)，且最近邻与随机插入解质量接近(nn_over_ri=1.0142)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在2秒内可能无法充分探索。NN2opt在此类中等难度小实例上通常能在有限时间内找到接近最优的解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 152,
+   "total": 919
+  }
+ },
+ "62": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对规则(nn_cv=0.7004，变异系数中等)，最近邻算法(nn_tour_len=5.6867)与随机插入算法(ri_tour_len=4.6559)的初始解差距不大(nn_over_ri=1.2214)，表明问题难度适中。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在2秒内可能无法充分探索。NN2opt的确定性搜索策略更适合此类中小规模、几何结构规则的TSP实例。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 182,
+   "total": 947
+  }
+ },
+ "96": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.459)，最近邻算法表现良好(nn_tour_len=4.3945)。NN2opt算法通过多起点策略能快速探索解空间，结合2-opt局部搜索可在2秒内高效收敛到高质量解。GA算法虽全局探索强但收敛速度较慢；GA2opt虽稳健但在此小实例上优势不明显；RI2opt的随机插入初始解质量较低(ri_tour_len=3.351)，不如NN2opt的定向搜索高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 142,
+   "total": 906
+  }
+ },
+ "28": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.5281)，且nn_spread_ratio=0.6057表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛至高质量解。RI2opt虽然通过重启增加多样性，但初始解质量不如NN2opt稳定；GA和GA2opt的种群进化过程在小实例上可能收敛较慢，难以在2秒内充分优化。NN2opt的确定性搜索策略更适合此类小规模、结构适中的TSP实例。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 151,
+   "total": 917
+  }
+ },
+ "299": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构较为均匀(nn_cv=0.4319)，最近邻算法表现良好(nn_tour_len=5.6403)。NN2opt算法通过多起点策略能快速找到高质量初始解，2-opt局部搜索能高效优化，在2秒内很可能收敛到最优解。GA算法虽探索能力强但收敛较慢；GA2opt虽结合局部搜索但计算开销大；RI2opt初始解质量较低(nn_over_ri=1.1852)，重启策略在有限时间内难以超越NN2opt。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 142,
+   "total": 906
+  }
+ },
+ "231": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何分布相对均匀(nn_cv=0.4998)，且nn_spread_ratio=0.4938表明节点分布较为紧凑。NN2算法通过多起点最近邻策略能快速构建高质量初始解，结合2-opt局部搜索能在短时间内找到接近最优的解。相比之下，GA算法虽然全局探索能力强，但在小规模实例中收敛速度可能不如NN2opt；GA2opt虽然加入了局部搜索，但计算开销更大；RI2opt的随机插入策略在此实例中表现不如NN2opt(nn_over_ri=1.295表明NN初始解质量更高)。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 155,
+   "total": 921
+  }
+ },
+ "163": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=30)，且几何结构相对均匀(nn_cv=0.6958)，适合NN2opt算法快速收敛。NN2opt通过多起点最近邻构建初始解并应用2-opt局部搜索，能在小规模实例中高效找到高质量解。相比之下，GA和GA2opt虽然全局探索能力强，但在小规模实例中收敛速度可能较慢；RI2opt虽然重启次数多，但初始解质量不如NN2opt稳定，且nn_over_ri=1.2523表明NN初始解质量明显优于RI，NN2opt更有优势。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 147,
+   "total": 912
+  }
+ },
+ "265": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，几何结构相对均匀(nn_cv=0.4902)，最近邻与随机插入解质量接近(nn_over_ri=1.0212)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽探索能力强但收敛速度较慢；GA2opt虽结合局部搜索但计算开销大；RI2opt随机性高且初始解质量不占优，在2秒内NN2opt最可能找到最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 144,
+   "total": 912
+  }
+ },
+ "197": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.45)，最近邻与随机插入解质量接近(nn_over_ri=1.0314)，表明局部优化空间有限。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在小规模实例中效率不如NN2opt直接的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 135,
+   "total": 897
+  }
+ },
+ "129": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.6877)，最近邻与随机插入解质量接近(nn_over_ri=1.0808)，表明局部优化可能快速找到高质量解。NN2opt通过多起点策略能在小实例中极快收敛，2秒内足以充分探索并优化。GA虽全局探索强但收敛慢，GA2opt因局部搜索增加计算开销可能不够充分；RI2opt初始解质量中等但重启次数受限，不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 135,
+   "total": 901
+  }
+ },
+ "61": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，节点分布相对均匀(nn_cv=0.3498)，且nn_spread_ratio=0.6749表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能在极短时间内收敛到高质量解。NN2opt的初始解质量较好(nn_tour_len=4.9626)，且局部搜索能力强，适合这种规模。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索可能略慢于NN2opt，RI2opt初始解质量较低(ri_tour_len=4.0127)，且重启策略对小规模实例效率不如NN2opt的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 177,
+   "total": 946
+  }
+ },
+ "95": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=30)，几何分布相对均匀(nn_cv=0.4405)，且最近邻算法已给出较好的初始解(nn_tour_len=5.6959)。NN2算法通过多起点最近邻构建初始解并应用2-opt局部搜索，能在小规模实例中快速收敛到高质量解。GA算法虽探索能力强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机插入初始解质量不如NN算法(nn_over_ri=1.1508表明NN优于RI)，在2秒时间预算内NN2opt最可能找到最短回路。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 155,
+   "total": 917
+  }
+ },
+ "27": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构较为均匀(nn_cv=0.487)，节点分布适中(nn_spread_ratio=0.618)。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。随机插入(RI)初始解质量更好(ri_tour_len更短)，但NN2opt的多起点策略能更全面探索解空间。遗传算法(GA/GA2opt)在小规模实例中收敛速度可能不及NN2opt，且2-opt局部搜索已能提供足够的局部优化能力。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 148,
+   "total": 910
+  }
+ },
+ "54": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=25)，节点分布相对集中(nn_spread_ratio=0.5466<1)，且最近邻算法与随机插入算法的解质量差距不大(nn_over_ri=1.2045)，表明几何结构规整。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此规模下效率不如NN2opt直接的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 146,
+   "total": 912
+  }
+ },
+ "298": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对均匀(nn_cv=0.4764)，最近邻算法(nn_over_ri=0.9673)与随机插入算法性能接近，表明初始解质量较高。NN2opt通过多起点策略结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。GA虽然全局探索能力强，但2秒内可能未充分收敛；GA2opt虽有局部搜索但计算开销大；RI2opt重启策略在小规模实例中效率不如NN2opt直接的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 140,
+   "total": 907
+  }
+ },
+ "230": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.5953)，且最近邻与随机插入解质量接近(nn_over_ri=1.0563)，表明问题难度适中。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛至高质量解。GA2opt虽稳健但全局搜索可能浪费计算资源；GA缺乏局部搜索难以精修；RI2opt初始解质量一般且重启策略不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 132,
+   "total": 900
+  }
+ },
+ "162": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例节点数较少(n=25)，且几何结构相对均匀(nn_cv=0.5777，nn_spread_ratio=0.5813)，表明城市分布较为规则。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。随机插入(RI2opt)虽然初始解质量略优(ri_tour_len=4.4155 < nn_tour_len=4.9605)，但NN2opt的多起点策略能更好地探索解空间。遗传算法(GA/GA2opt)在小实例中可能因种群初始化和迭代开销而收敛较慢，难以在2秒内超越NN2opt的局部搜索效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 179,
+   "total": 946
+  }
+ },
+ "264": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.8795)，最近邻与随机插入解质量接近(nn_over_ri=1.0314)，表明局部优化潜力大。NN2opt通过多起点策略能快速探索不同初始解，结合2-opt局部搜索，极可能在2秒内找到高质量解。GA虽全局探索强但收敛慢，GA2opt计算开销大，RI2opt初始解质量不如NN2opt稳定，均不适合这种小规模实例。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 132,
+   "total": 899
+  }
+ },
+ "196": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.3938)，最近邻与随机插入解质量相当(nn_over_ri=0.9991)，表明几何结构规整。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中极快收敛到高质量解。GA虽然探索能力强，但在小实例中收敛速度可能不及NN2opt；GA2opt增加了局部搜索但计算开销更大；RI2opt的随机插入初始解质量与NN相当，但多起点策略不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 147,
+   "total": 914
+  }
+ },
+ "128": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.7102)，且nn_spread_ratio=0.4845表明节点分布较为聚集。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，能在小规模实例中极快收敛到高质量解。相比之下，GA和GA2opt虽然全局探索能力强，但在小实例中收敛速度可能不如NN2opt；RI2opt虽然多次重启，但初始解质量不如NN2opt，且在小实例中优势不明显。NN2opt的快速回路长度(nn_tour_len=3.742)与随机插入(ri_tour_len=3.575)接近，表明其初始解质量已相当好，加上2-opt优化，很可能在2秒内找到最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 193,
+   "total": 960
+  }
+ },
+ "60": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.3789)，最近邻与随机插入解质量接近(nn_over_ri=1.1179)，表明局部优化潜力大。NN2opt通过多起点最近邻初始化+2-opt局部搜索，能在极短时间内(远小于2秒)找到高质量解，特别适合小规模问题。GA虽然全局探索强但收敛慢，GA2opt增加了计算开销，RI2opt初始解质量不如NN2opt稳定，在2秒内NN2opt最可能找到最优或接近最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 146,
+   "total": 913
+  }
+ },
+ "94": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.5195)，最近邻与随机插入解质量接近(nn_over_ri=1.1726)，表明局部优化可能快速找到高质量解。NN2算法通过多起点最近邻初始化并应用2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此规模下不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 136,
+   "total": 902
+  }
+ },
+ "26": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.6227)，最近邻与随机插入解质量接近(nn_over_ri=1.0214)，表明局部优化潜力大。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索计算开销大，RI2opt初始解质量中等且重启策略不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 133,
+   "total": 900
+  }
+ },
+ "297": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.3345)，且最近邻与随机插入解质量接近(nn_over_ri=1.1056)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽全局探索强但收敛速度可能不足；GA2opt虽稳健但2-opt开销大；RI2opt初始解质量中等且重启策略不如NN2opt高效。NN2opt在2秒内极可能找到最优或接近最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 148,
+   "total": 914
+  }
+ },
+ "229": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，节点分布相对均匀(nn_cv=0.5544)，且最近邻算法已给出较好的初始解(nn_tour_len=4.0947)。NN2算法通过多起点策略结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在小规模上不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 125,
+   "total": 889
+  }
+ },
+ "161": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.5753)，最近邻算法表现良好(nn_over_ri=1.0594)。NN2opt通过多起点策略能快速探索优质解，结合2-opt局部搜索可高效精修。GA虽全局探索强但小规模下收敛可能较慢；GA2opt虽稳健但NN2opt在小实例上通常更快；RI2opt初始解质量中等，不如NN2opt的多起点策略高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 128,
+   "total": 893
+  }
+ },
+ "263": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.4531)，且nn_spread_ratio=0.5945表明节点聚集程度较高，适合贪心算法快速构建高质量初始解。NN2算法通过多起点策略结合2-opt局部搜索，能在短时间内高效收敛至较优解。相比之下，GA和GA2opt虽全局探索能力强，但在小规模实例中收敛速度可能不及NN2opt；RI2opt的随机插入策略初始解质量不如NN2opt稳定，且重启次数有限，难以在2秒内超越NN2opt的优化效果。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 151,
+   "total": 917
+  }
+ },
+ "195": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构较为均匀(nn_cv=0.5898)，最近邻算法表现良好(nn_tour_len=5.9523)。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。GA2opt虽然稳健但遗传操作耗时；GA缺乏局部搜索难以精修；RI2opt初始解质量较低(ri_tour_len=5.1024)，重启策略在2秒内难以超越NN2opt的效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 137,
+   "total": 904
+  }
+ },
+ "59": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=30)，且几何结构相对均匀(nn_cv=0.5698)，最近邻与随机插入解质量接近(nn_over_ri=1.0159)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在2秒内可能无法充分探索。NN2opt在此类中等难度小实例上通常能在有限时间内找到接近最优的解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 152,
+   "total": 916
+  }
+ },
+ "127": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.3517)，且nn_spread_ratio=0.6047表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。RI2opt虽然通过多次重启增加多样性，但初始解质量不如NN2opt稳定；GA和GA2opt在大种群搜索上耗时较多，在2秒内可能无法充分收敛，而NN2opt的确定性搜索更适合此类规模和分布的实例。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 145,
+   "total": 912
+  }
+ },
+ "93": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，且几何结构相对均匀(nn_cv=0.4576)，最近邻算法能快速构建高质量初始解(nn_tour_len=4.3595)。NN2opt通过多起点策略结合2-opt局部搜索，能在2秒内高效探索并优化解空间，对小规模问题通常能快速收敛到最优或接近最优解。GA虽然全局探索能力强，但小规模问题下收敛速度可能不如NN2opt；GA2opt增加了局部搜索但计算开销更大；RI2opt的随机插入初始解质量不如NN2opt，且重启策略在小规模问题中效率较低。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 156,
+   "total": 924
+  }
+ },
+ "25": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，节点分布相对均匀(nn_cv=0.5338)，最近邻算法初始解质量良好(nn_tour_len=4.2947)，且与随机插入解相当(nn_over_ri=1.0397)。NN2算法通过多起点策略结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽探索能力强但收敛速度较慢；GA2opt虽稳健但计算开销大；RI2opt初始解质量一般，重启策略在小规模上不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 142,
+   "total": 906
+  }
+ },
+ "296": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.668)，最近邻算法(nn_tour_len=4.9989)与随机插入(ri_tour_len=4.224)差距不大(nn_over_ri=1.1835)，表明初始解质量接近。NN2opt算法通过多起点最近邻初始化+2-opt局部搜索，能在小规模实例中快速收敛到高质量解。GA和GA2opt虽然全局探索强，但在2秒内可能无法充分收敛；RI2opt的随机重启策略在小规模上效率不如NN2opt的定向搜索。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 154,
+   "total": 919
+  }
+ },
+ "228": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.2631)，且nn_spread_ratio=0.6858表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能在极短时间内收敛到高质量解。NN2opt的初始解质量较高(nn_tour_len=5.111)，且2-opt能有效优化局部结构。相比之下，GA虽全局探索强但收敛较慢；GA2opt虽包含局部搜索但计算开销大；RI2opt初始解质量较低(ri_tour_len=3.9783)，难以在短时间内超越NN2opt的优化效果。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 167,
+   "total": 932
+  }
+ },
+ "160": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.6491)，且nn_spread_ratio=0.6257表明节点分布适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能极快收敛到高质量解。随机插入(ri_tour_len=3.8779)比最近邻(nn_tour_len=4.5164)表现更好，表明局部优化潜力大。GA和GA2opt虽全局探索强，但对小实例收敛速度可能不及NN2opt，且2秒预算足够NN2opt完成多起点搜索和充分局部优化。RI2opt虽重启次数多，但初始解质量不如NN2opt系统化。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 182,
+   "total": 950
+  }
+ },
+ "58": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.7392)，最近邻与随机插入解质量接近(nn_over_ri=1.2008)，表明局部优化潜力大。NN2算法通过多起点最近邻初始化+2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt初始解质量一般且重启次数有限，不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 135,
+   "total": 900
+  }
+ },
+ "262": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.4588)，最近邻与随机插入解质量接近(nn_over_ri=1.1158)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在小规模问题上效率不如NN2opt直接。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 131,
+   "total": 897
+  }
+ },
+ "194": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例节点数较少(n=25)，几何结构相对均匀(nn_cv=0.7048)，最近邻与随机插入解质量相近(nn_over_ri=1.0125)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽探索能力强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此规模下效率不及NN2opt的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 134,
+   "total": 899
+  }
+ },
+ "126": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.8022)，且最近邻与随机插入解质量接近(nn_over_ri=1.1449)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此规模下不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 131,
+   "total": 899
+  }
+ },
+ "92": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对均匀(nn_cv=0.3571)，且最近邻算法已给出高质量初始解(nn_over_ri=0.9983)。NN2opt通过多起点策略能快速探索不同初始路径，结合2-opt局部搜索能在小规模实例上高效收敛到最优解。GA虽然探索能力强但收敛速度较慢；GA2opt增加了局部搜索但计算开销更大；RI2opt的随机插入策略在此实例上无明显优势，且重启次数多可能浪费宝贵时间。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 136,
+   "total": 904
+  }
+ },
+ "24": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，节点分布相对集中(nn_spread_ratio=0.5193<1)，且NN与RI初始解质量接近(nn_over_ri=1.0739)，表明几何结构规整。NN2opt通过多起点策略能快速探索优质解，2-opt局部搜索在小规模下高效收敛。GA虽全局探索强但收敛慢，GA2opt因局部搜索增加计算开销，RI2opt初始解质量一般且重启策略不如NN2opt定向高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 131,
+   "total": 899
+  }
+ },
+ "295": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=30)，几何结构相对均匀(nn_cv=0.5027)，最近邻与随机插入解质量相近(nn_over_ri=1.0077)，表明局部优化可能有效。NN2opt通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA虽全局探索强但2秒内可能未充分收敛；GA2opt虽稳健但NN2opt在小实例上通常更快；RI2opt初始解质量中等，不如NN2opt的多起点策略高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 140,
+   "total": 905
+  }
+ },
+ "23": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.5355)，最近邻与随机插入解质量接近(nn_over_ri=0.9955)，表明几何结构规整。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA虽全局探索强但收敛较慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt初始解质量不如NN2opt且重启策略效率低。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 135,
+   "total": 902
+  }
+ },
+ "227": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=30)，且几何结构相对规则(nn_cv=0.4451，变异系数中等)，最近邻与随机插入解质量接近(nn_over_ri=1.2262)，表明结构不复杂。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛较慢；GA2opt虽有局部搜索但计算开销大；RI2opt初始解质量中等且重启策略不如NN2opt高效。NN2opt在2秒内极可能找到最优或近优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 154,
+   "total": 920
+  }
+ },
+ "261": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，节点分布相对集中(nn_spread_ratio=0.5112<1)，几何结构较为规整(nn_cv=0.6834)。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。随机插入(RI)初始解质量更好(ri_tour_len更短)，但NN2opt的局部搜索效率更高。GA和GA2opt在小规模实例中收敛速度可能不及NN2opt，且遗传操作的开销可能浪费宝贵的计算时间。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 145,
+   "total": 908
+  }
+ },
+ "193": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.6008)，最近邻与随机插入解质量接近(nn_over_ri=1.202)，表明局部优化可能快速收敛。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中极快收敛到高质量解。GA算法虽全局探索强但收敛慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在小规模实例中效率不如NN2opt直接的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 136,
+   "total": 899
+  }
+ },
+ "125": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.5279)，节点分布适中(nn_spread_ratio=0.5966)，NN2opt算法能快速构建高质量初始解并通过多起点2-opt高效精修，在2秒内极可能找到最优解。GA虽然探索能力强但收敛较慢；GA2opt增加了局部搜索但计算开销大；RI2opt初始解质量中等且重启策略对小规模实例效率不如NN2opt直接。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 126,
+   "total": 892
+  }
+ },
+ "57": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，几何结构相对均匀(nn_cv=0.5373)，最近邻与随机插入回路长度差异适中(nn_over_ri=1.2144)，表明问题难度适中。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模问题上快速收敛到高质量解。GA算法虽全局探索强但收敛较慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt初始解质量不如NN2opt且重启策略在小规模问题上效率较低。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 136,
+   "total": 903
+  }
+ },
+ "159": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=30)，且几何结构相对规则，nn_spread_ratio(0.5439)和nn_cv(0.5029)表明节点分布适中，既不过度分散也不过度聚集。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。NN2opt的优势在于其确定性搜索和局部优化能力，特别适合这种规模适中、结构规则的实例。相比之下，GA和GA2opt虽然全局探索能力强，但在小实例中收敛速度可能不如NN2opt；RI2opt虽然多次重启，但初始解质量不如NN2opt，且2-opt优化效率较低。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 167,
+   "total": 932
+  }
+ },
+ "91": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=30)，且几何结构相对均匀(nn_cv=0.5247)，适合NN2opt算法快速收敛。NN2opt通过多起点最近邻构建初始解并应用2-opt局部搜索，能在小规模实例中高效找到高质量解。nn_spread_ratio=0.4985表明节点分布相对聚集，有利于最近邻策略。GA和GA2opt虽然全局探索能力强，但在小规模实例中收敛速度可能不如NN2opt；RI2opt虽然重启次数多，但初始解质量不如NN2opt，且2-opt改进效率较低。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 148,
+   "total": 911
+  }
+ },
+ "22": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，且几何结构相对均匀(nn_cv=0.6505，nn_spread_ratio=0.5487)，表明城市分布较为规则。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，能在小规模实例中快速收敛到高质量解。相比之下，GA算法虽然全局探索能力强，但在小实例中收敛速度可能不如NN2opt；GA2opt虽然加入了局部搜索，但计算开销更大；RI2opt的随机插入初始解质量不如NN2opt，且重启次数有限，难以在2秒内超越NN2opt的效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 154,
+   "total": 920
+  }
+ },
+ "294": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何分布相对均匀(nn_cv=0.6931)，最近邻与随机插入回路长度比适中(nn_over_ri=1.26)，表明NN算法能快速构建高质量初始解。NN2opt通过多起点策略结合2-opt局部搜索，能在小规模实例中极快收敛至高质量解。GA虽探索能力强但收敛较慢，GA2opt因局部搜索开销可能无法充分利用2秒预算，RI2opt初始解质量不如NN且重启策略效率较低。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 133,
+   "total": 896
+  }
+ },
+ "226": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.4762)，最近邻算法表现良好(nn_over_ri=1.1452)。NN2opt算法通过多起点策略能快速找到高质量初始解，并在2秒内充分进行2-opt局部搜索，对小规模实例通常能收敛到最优解。GA算法虽全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机插入初始解质量不如NN2opt的贪心策略，且重启次数有限难以在短时间内超越NN2opt的精细搜索。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 149,
+   "total": 914
+  }
+ },
+ "56": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.6521)，最近邻与随机插入解质量接近(nn_over_ri=1.055)，表明问题难度适中。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA虽然全局探索强但收敛较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在此小规模实例中效率不如NN2opt直接的多起点策略。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 137,
+   "total": 903
+  }
+ },
+ "260": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.6846)，最近邻算法初始解质量高(nn_over_ri=0.967)，NN2opt算法通过多起点策略能快速找到高质量解。GA算法在小实例中收敛速度可能不足，GA2opt虽然稳健但计算开销大，RI2opt初始解质量不如NN2opt且重启策略在小规模上优势不明显。NN2opt的贪心构建+局部搜索组合最适合这种小规模、几何均匀的实例。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 134,
+   "total": 897
+  }
+ },
+ "192": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对集中(nn_spread_ratio=0.5488<1)，且最近邻与随机插入初始解质量接近(nn_over_ri=1.1818)，表明结构规整。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛慢，GA2opt局部搜索开销大，RI2opt随机性高且初始解质量一般，均不如NN2opt在此类小规模规整实例中高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 145,
+   "total": 914
+  }
+ },
+ "124": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.6064)，最近邻与随机插入解质量接近(nn_over_ri=1.0583)，表明局部优化潜力大。NN2opt通过多起点最近邻初始化+2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA虽全局探索强但收敛慢，GA2opt因局部搜索增加计算开销可能超时，RI2opt初始解质量一般且重启策略不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 133,
+   "total": 897
+  }
+ },
+ "158": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.7141)，且最近邻与随机插入回路长度差异适中(nn_over_ri=1.2089)，表明问题难度适中。NN2算法通过多起点策略能快速找到高质量初始解，结合2-opt局部搜索可在2秒内高效收敛到较优解。GA算法虽全局探索强但收敛速度较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机重启策略在小型问题上效率不如NN2opt直接。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 138,
+   "total": 904
+  }
+ },
+ "90": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=25)，几何结构相对均匀(nn_cv=0.463)，最近邻与随机插入解质量接近(nn_over_ri=1.0892)，表明结构规整。NN2opt算法利用多起点最近邻策略能快速构建高质量初始解，配合2-opt局部搜索在2秒内高效收敛。GA虽探索能力强但小实例收敛慢，GA2opt计算开销大，RI2opt初始解质量不如NN2opt稳定，因此NN2opt最可能在有限时间内找到最优解。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 136,
+   "total": 901
+  }
+ },
+ "21": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，且几何结构相对均匀(nn_cv=0.5715)，适合NN2opt算法快速收敛。NN2opt通过多起点最近邻构建初始解并应用2-opt局部搜索，能在小规模实例中极快找到高质量解。随机插入(RI2opt)虽然初始解更优(ri_tour_len=4.14 < nn_tour_len=5.17)，但NN2opt的多起点策略能更好探索解空间。遗传算法(GA/GA2opt)在小规模实例中收敛速度可能不及NN2opt，且2-opt局部搜索已能提供足够的局部优化能力。nn_spread_ratio=0.561表明节点相对聚集，有利于NN策略快速找到优质路径。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 181,
+   "total": 945
+  }
+ },
+ "293": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，节点分布相对均匀(nn_cv=0.5313)，且最近邻与随机插入解质量接近(nn_over_ri=1.1125)，表明结构规整。NN2opt算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA和GA2opt虽全局探索强，但在小实例中收敛速度可能不及NN2opt；RI2opt虽多次重启，但初始解质量不如NN2opt的最近邻策略，在2秒内难以超越NN2opt的效率与精度。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 151,
+   "total": 915
+  }
+ },
+ "225": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，节点分布相对均匀(nn_cv=0.4338)，最近邻算法初始解质量高(nn_over_ri=0.9291)，且nn_spread_ratio=0.5466表明节点聚集适中。NN2opt通过多起点策略能快速探索不同初始解，结合2-opt局部搜索在2秒内极可能找到最优解。GA虽然探索能力强但收敛速度可能不及NN2opt；GA2opt增加了局部搜索但计算开销更大；RI2opt初始解质量不如NN2opt，重启策略在如此小规模实例中效率较低。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 760,
+   "completion": 152,
+   "total": 912
+  }
+ },
+ "191": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何结构较为均匀(nn_cv=0.4883)，最近邻与随机插入解质量相当(nn_over_ri=1.0049)，表明局部优化潜力大。NN2算法通过多起点最近邻初始化结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛较慢；GA2opt虽有局部搜索但计算开销大；RI2opt初始解质量一般且重启策略不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 133,
+   "total": 901
+  }
+ },
+ "123": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.3935)，且最近邻算法已给出较优解(nn_tour_len=5.8552)。NN2算法通过多起点策略结合2-opt局部搜索，能在短时间内高效探索并优化解空间。相比之下，GA算法虽全局探索强但收敛较慢；GA2opt虽结合局部搜索但计算开销大；RI2opt初始解质量较低(ri_tour_len=5.0068)，重启策略在有限时间内难以超越NN2opt的效率。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 142,
+   "total": 906
+  }
+ },
+ "1": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，且几何结构较为规则(nn_spread_ratio=0.4474<1，表明节点聚集)，最近邻与随机插入解质量接近(nn_over_ri=1.0511)，表明局部优化潜力大。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，能在小规模实例中快速收敛至高质量解。GA算法虽全局探索强但收敛较慢；GA2opt虽结合局部搜索但计算开销大；RI2opt初始解质量中等且重启策略不如NN2opt高效。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 145,
+   "total": 912
+  }
+ },
+ "259": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，几何分布相对均匀(nn_cv=0.6751)，最近邻算法表现良好(nn_tour_len=5.8901)。NN2opt算法通过多起点策略能快速找到高质量初始解，并在2秒内充分进行2-opt局部搜索，极有可能找到最优解。GA算法虽全局探索强但收敛速度较慢；GA2opt虽结合局部搜索但计算开销大；RI2opt初始解质量较低(nn_over_ri=1.2842)，难以在短时间内超越NN2opt。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 141,
+   "total": 910
+  }
+ },
+ "55": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模适中(n=30)，节点分布相对均匀(nn_cv=0.5193)，且nn_spread_ratio=0.5609表明节点聚集程度适中。NN2算法通过多起点最近邻构建初始解，结合2-opt局部搜索，对小规模实例能快速收敛到高质量解。RI2opt虽然通过重启增加多样性，但初始解质量不如NN2opt稳定；GA和GA2opt需要更多时间进化，在2秒预算内可能无法充分收敛，且对小实例优势不明显。NN2opt的快速构建与局部搜索结合最适合此类规模和几何结构的实例。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 151,
+   "total": 916
+  }
+ },
+ "157": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=20)，几何结构相对均匀(nn_cv=0.4148)，且最近邻算法已给出较好初始解(nn_tour_len=5.1161)。NN2算法通过多起点最近邻初始化并快速2-opt优化，能在小规模实例中极快收敛到高质量解。GA算法虽探索能力强但收敛速度较慢，GA2opt因包含局部搜索会增加计算开销，RI2opt的随机插入初始解质量不如NN算法(nn_over_ri=1.2851)，且重启策略在小规模实例中效率不高。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 145,
+   "total": 911
+  }
+ },
+ "89": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模较小(n=20)，且几何结构相对均匀(nn_cv=0.6105)，适合NN2opt算法快速收敛。NN2opt通过多起点最近邻构建初始解并2-opt优化，对小实例能在极短时间内找到高质量解。随机插入回路长度(3.9976)优于最近邻(4.5698)，表明NN初始解质量一般，但NN2opt的多起点策略可弥补此不足。GA和GA2opt在小实例上收敛速度可能不及NN2opt，而RI2opt虽然重启次数多，但初始解质量不如NN2opt稳定，且2-opt优化效率可能低于NN2opt的针对性优化。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 166,
+   "total": 934
+  }
+ },
+ "20": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "reason": "该实例规模小(n=15)，几何结构相对均匀(nn_cv=0.6613)，最近邻与随机插入解质量接近(nn_over_ri=1.1441)，表明局部优化空间有限。NN2算法通过多起点最近邻+2-opt能在小规模实例中快速收敛至高质量解，2秒内足够完成多次优化。GA算法虽全局探索强但收敛慢，GA2opt因包含局部搜索计算开销大，RI2opt随机性高不如NN2opt稳定。",
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 130,
+   "total": 895
+  }
+ }
+}

@@ -1,0 +1,6 @@
+# API key 等敏感文件禁止入库
+.env
+*.key
+config.local.*
+__pycache__/
+*.pyc

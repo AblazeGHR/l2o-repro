@@ -1,0 +1,42 @@
+# Minimal pip-only environment for Neural QAOA^2.
+# Notes:
+# - The Torch/PyG stack is hardware-specific. The URLs below match the CUDA 12.1 setup used in environment.yml.
+# - If you are on CPU-only hardware, install CPU wheels instead (see README).
+
+numpy<2
+networkx>=2.6,<4
+tqdm>=4.64,<5
+pandas
+scipy
+matplotlib
+seaborn
+psutil
+python-igraph
+pymetis
+
+# Optimization / QP solvers used in parts of the pipeline
+cvxpy==1.7.3
+scs==3.2.8
+
+# PyTorch (CUDA 12.1)
+--extra-index-url https://download.pytorch.org/whl/cu121
+-f https://data.pyg.org/whl/torch-2.5.1%2Bcu121.html
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+torchaudio==2.5.1+cu121
+
+# PyG (must match the Torch build)
+torch-geometric==2.6.1
+torch-scatter==2.1.2+pt25cu121
+torch-sparse==0.6.18+pt25cu121
+torch-cluster==1.6.3+pt25cu121
+torch-spline-conv==1.2.2+pt25cu121
+
+# Quantum simulation
+pennylane==0.42.3
+pennylane-lightning==0.42.0
+pennylane-lightning-gpu==0.42.0
+autoray==0.7.2
+
+# NVIDIA cuQuantum (optional acceleration)
+cuquantum-python-cu12==25.3.0.post0

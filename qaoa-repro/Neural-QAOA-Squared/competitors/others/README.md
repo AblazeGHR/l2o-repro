@@ -1,0 +1,1 @@
+extended to other D&C quantum algorithms 

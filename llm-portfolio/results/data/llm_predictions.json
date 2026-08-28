@@ -1,0 +1,2977 @@
+{
+ "19": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 147,
+   "total": 915
+  }
+ },
+ "258": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 150,
+   "total": 916
+  }
+ },
+ "2": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 187,
+   "total": 949
+  }
+ },
+ "257": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 137,
+   "total": 901
+  }
+ },
+ "189": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 761,
+   "completion": 148,
+   "total": 909
+  }
+ },
+ "291": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 130,
+   "total": 895
+  }
+ },
+ "18": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 149,
+   "total": 914
+  }
+ },
+ "223": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 189,
+   "total": 956
+  }
+ },
+ "155": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 157,
+   "total": 921
+  }
+ },
+ "87": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 149,
+   "total": 916
+  }
+ },
+ "121": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 138,
+   "total": 900
+  }
+ },
+ "53": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 171,
+   "total": 936
+  }
+ },
+ "17": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 159,
+   "total": 923
+  }
+ },
+ "256": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 138,
+   "total": 901
+  }
+ },
+ "188": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 153,
+   "total": 918
+  }
+ },
+ "290": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 152,
+   "total": 919
+  }
+ },
+ "222": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 157,
+   "total": 919
+  }
+ },
+ "154": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 144,
+   "total": 912
+  }
+ },
+ "86": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 147,
+   "total": 915
+  }
+ },
+ "120": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 130,
+   "total": 897
+  }
+ },
+ "52": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 135,
+   "total": 903
+  }
+ },
+ "190": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 143,
+   "total": 910
+  }
+ },
+ "16": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 145,
+   "total": 912
+  }
+ },
+ "255": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 136,
+   "total": 902
+  }
+ },
+ "156": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 143,
+   "total": 912
+  }
+ },
+ "187": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 165,
+   "total": 930
+  }
+ },
+ "289": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 128,
+   "total": 894
+  }
+ },
+ "221": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 129,
+   "total": 892
+  }
+ },
+ "153": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 136,
+   "total": 903
+  }
+ },
+ "85": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 161,
+   "total": 925
+  }
+ },
+ "119": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 134,
+   "total": 899
+  }
+ },
+ "51": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 180,
+   "total": 945
+  }
+ },
+ "15": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 134,
+   "total": 899
+  }
+ },
+ "254": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 145,
+   "total": 911
+  }
+ },
+ "186": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 148,
+   "total": 912
+  }
+ },
+ "288": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 135,
+   "total": 898
+  }
+ },
+ "220": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 149,
+   "total": 917
+  }
+ },
+ "152": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 135,
+   "total": 897
+  }
+ },
+ "84": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 125,
+   "total": 893
+  }
+ },
+ "14": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 138,
+   "total": 904
+  }
+ },
+ "118": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 131,
+   "total": 897
+  }
+ },
+ "50": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 138,
+   "total": 905
+  }
+ },
+ "0": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 165,
+   "total": 931
+  }
+ },
+ "253": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 153,
+   "total": 919
+  }
+ },
+ "185": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 170,
+   "total": 935
+  }
+ },
+ "287": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 138,
+   "total": 903
+  }
+ },
+ "13": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 145,
+   "total": 910
+  }
+ },
+ "219": {
+  "algorithm": null,
+  "confidence": 0.0,
+  "parse_failed": true
+ },
+ "151": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 155,
+   "total": 921
+  }
+ },
+ "83": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 152,
+   "total": 919
+  }
+ },
+ "117": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 149,
+   "total": 911
+  }
+ },
+ "49": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 157,
+   "total": 923
+  }
+ },
+ "12": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 127,
+   "total": 890
+  }
+ },
+ "252": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 132,
+   "total": 896
+  }
+ },
+ "184": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 137,
+   "total": 904
+  }
+ },
+ "286": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 125,
+   "total": 890
+  }
+ },
+ "218": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 155,
+   "total": 920
+  }
+ },
+ "150": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 151,
+   "total": 915
+  }
+ },
+ "82": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 127,
+   "total": 891
+  }
+ },
+ "116": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 142,
+   "total": 910
+  }
+ },
+ "48": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 136,
+   "total": 900
+  }
+ },
+ "11": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 155,
+   "total": 922
+  }
+ },
+ "251": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 144,
+   "total": 910
+  }
+ },
+ "183": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 133,
+   "total": 897
+  }
+ },
+ "285": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 138,
+   "total": 903
+  }
+ },
+ "217": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 173,
+   "total": 942
+  }
+ },
+ "149": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 173,
+   "total": 940
+  }
+ },
+ "81": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 130,
+   "total": 897
+  }
+ },
+ "115": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 139,
+   "total": 903
+  }
+ },
+ "47": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 144,
+   "total": 908
+  }
+ },
+ "10": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 149,
+   "total": 914
+  }
+ },
+ "250": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 167,
+   "total": 934
+  }
+ },
+ "182": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 138,
+   "total": 907
+  }
+ },
+ "284": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 770,
+   "completion": 158,
+   "total": 928
+  }
+ },
+ "216": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 145,
+   "total": 907
+  }
+ },
+ "148": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 139,
+   "total": 905
+  }
+ },
+ "80": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 167,
+   "total": 934
+  }
+ },
+ "9": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 143,
+   "total": 907
+  }
+ },
+ "114": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 135,
+   "total": 899
+  }
+ },
+ "46": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 140,
+   "total": 907
+  }
+ },
+ "8": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 132,
+   "total": 898
+  }
+ },
+ "249": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 133,
+   "total": 900
+  }
+ },
+ "181": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 133,
+   "total": 898
+  }
+ },
+ "283": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 149,
+   "total": 915
+  }
+ },
+ "215": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 155,
+   "total": 921
+  }
+ },
+ "147": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 148,
+   "total": 913
+  }
+ },
+ "79": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 168,
+   "total": 935
+  }
+ },
+ "113": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 132,
+   "total": 898
+  }
+ },
+ "45": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 148,
+   "total": 914
+  }
+ },
+ "7": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 133,
+   "total": 897
+  }
+ },
+ "248": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 143,
+   "total": 911
+  }
+ },
+ "180": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 140,
+   "total": 906
+  }
+ },
+ "282": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 125,
+   "total": 890
+  }
+ },
+ "214": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 165,
+   "total": 929
+  }
+ },
+ "146": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 165,
+   "total": 928
+  }
+ },
+ "78": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 138,
+   "total": 904
+  }
+ },
+ "112": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 140,
+   "total": 906
+  }
+ },
+ "44": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 134,
+   "total": 901
+  }
+ },
+ "247": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 141,
+   "total": 910
+  }
+ },
+ "179": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 131,
+   "total": 900
+  }
+ },
+ "281": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 140,
+   "total": 907
+  }
+ },
+ "6": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 143,
+   "total": 912
+  }
+ },
+ "213": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 187,
+   "total": 956
+  }
+ },
+ "145": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 147,
+   "total": 914
+  }
+ },
+ "77": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 133,
+   "total": 901
+  }
+ },
+ "111": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 151,
+   "total": 918
+  }
+ },
+ "43": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 131,
+   "total": 899
+  }
+ },
+ "246": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 133,
+   "total": 900
+  }
+ },
+ "178": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 134,
+   "total": 897
+  }
+ },
+ "280": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 154,
+   "total": 923
+  }
+ },
+ "212": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 760,
+   "completion": 140,
+   "total": 900
+  }
+ },
+ "144": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 129,
+   "total": 894
+  }
+ },
+ "76": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 142,
+   "total": 907
+  }
+ },
+ "110": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 147,
+   "total": 914
+  }
+ },
+ "42": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 169,
+   "total": 933
+  }
+ },
+ "245": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 132,
+   "total": 899
+  }
+ },
+ "177": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 144,
+   "total": 909
+  }
+ },
+ "279": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 157,
+   "total": 924
+  }
+ },
+ "211": {
+  "algorithm": null,
+  "confidence": 0.0,
+  "parse_failed": true
+ },
+ "143": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 144,
+   "total": 909
+  }
+ },
+ "75": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 139,
+   "total": 904
+  }
+ },
+ "109": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 168,
+   "total": 937
+  }
+ },
+ "41": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 156,
+   "total": 923
+  }
+ },
+ "292": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 142,
+   "total": 908
+  }
+ },
+ "244": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 138,
+   "total": 901
+  }
+ },
+ "176": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 139,
+   "total": 905
+  }
+ },
+ "278": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 159,
+   "total": 922
+  }
+ },
+ "210": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 133,
+   "total": 899
+  }
+ },
+ "142": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 124,
+   "total": 889
+  }
+ },
+ "74": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 770,
+   "completion": 135,
+   "total": 905
+  }
+ },
+ "108": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 132,
+   "total": 897
+  }
+ },
+ "40": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 126,
+   "total": 888
+  }
+ },
+ "243": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 168,
+   "total": 936
+  }
+ },
+ "175": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 155,
+   "total": 920
+  }
+ },
+ "122": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 146,
+   "total": 913
+  }
+ },
+ "277": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 169,
+   "total": 936
+  }
+ },
+ "209": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 123,
+   "total": 885
+  }
+ },
+ "141": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 136,
+   "total": 899
+  }
+ },
+ "73": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 137,
+   "total": 903
+  }
+ },
+ "107": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 141,
+   "total": 907
+  }
+ },
+ "39": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 168,
+   "total": 931
+  }
+ },
+ "88": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 157,
+   "total": 923
+  }
+ },
+ "242": {
+  "algorithm": null,
+  "confidence": 0.0,
+  "parse_failed": true
+ },
+ "174": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 151,
+   "total": 918
+  }
+ },
+ "276": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 177,
+   "total": 942
+  }
+ },
+ "208": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 167,
+   "total": 932
+  }
+ },
+ "140": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 139,
+   "total": 908
+  }
+ },
+ "72": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 135,
+   "total": 898
+  }
+ },
+ "106": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 148,
+   "total": 912
+  }
+ },
+ "38": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 143,
+   "total": 906
+  }
+ },
+ "241": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 178,
+   "total": 940
+  }
+ },
+ "173": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 125,
+   "total": 887
+  }
+ },
+ "71": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 172,
+   "total": 935
+  }
+ },
+ "139": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 165,
+   "total": 930
+  }
+ },
+ "275": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 138,
+   "total": 905
+  }
+ },
+ "207": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 143,
+   "total": 911
+  }
+ },
+ "105": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 139,
+   "total": 907
+  }
+ },
+ "37": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 761,
+   "completion": 159,
+   "total": 920
+  }
+ },
+ "240": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 153,
+   "total": 921
+  }
+ },
+ "172": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 150,
+   "total": 916
+  }
+ },
+ "274": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 136,
+   "total": 899
+  }
+ },
+ "206": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 142,
+   "total": 908
+  }
+ },
+ "138": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 126,
+   "total": 890
+  }
+ },
+ "70": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 141,
+   "total": 905
+  }
+ },
+ "104": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 137,
+   "total": 904
+  }
+ },
+ "36": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 770,
+   "completion": 148,
+   "total": 918
+  }
+ },
+ "239": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 138,
+   "total": 901
+  }
+ },
+ "171": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 159,
+   "total": 925
+  }
+ },
+ "273": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 135,
+   "total": 900
+  }
+ },
+ "205": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 141,
+   "total": 904
+  }
+ },
+ "137": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 143,
+   "total": 908
+  }
+ },
+ "69": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 171,
+   "total": 937
+  }
+ },
+ "103": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 128,
+   "total": 896
+  }
+ },
+ "35": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 178,
+   "total": 946
+  }
+ },
+ "4": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 138,
+   "total": 901
+  }
+ },
+ "5": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 154,
+   "total": 919
+  }
+ },
+ "238": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 169,
+   "total": 935
+  }
+ },
+ "170": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 164,
+   "total": 926
+  }
+ },
+ "272": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 761,
+   "completion": 139,
+   "total": 900
+  }
+ },
+ "204": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 145,
+   "total": 910
+  }
+ },
+ "136": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 156,
+   "total": 923
+  }
+ },
+ "68": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 140,
+   "total": 905
+  }
+ },
+ "102": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 159,
+   "total": 923
+  }
+ },
+ "34": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 137,
+   "total": 902
+  }
+ },
+ "237": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 144,
+   "total": 912
+  }
+ },
+ "169": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 133,
+   "total": 900
+  }
+ },
+ "271": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 165,
+   "total": 933
+  }
+ },
+ "203": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 153,
+   "total": 920
+  }
+ },
+ "135": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 162,
+   "total": 930
+  }
+ },
+ "67": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 160,
+   "total": 926
+  }
+ },
+ "101": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 149,
+   "total": 914
+  }
+ },
+ "33": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 142,
+   "total": 911
+  }
+ },
+ "236": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 143,
+   "total": 911
+  }
+ },
+ "168": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 154,
+   "total": 918
+  }
+ },
+ "270": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 154,
+   "total": 918
+  }
+ },
+ "202": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 148,
+   "total": 914
+  }
+ },
+ "134": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 179,
+   "total": 942
+  }
+ },
+ "66": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 135,
+   "total": 903
+  }
+ },
+ "100": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 153,
+   "total": 921
+  }
+ },
+ "32": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 151,
+   "total": 918
+  }
+ },
+ "235": {
+  "algorithm": null,
+  "confidence": 0.0,
+  "parse_failed": true
+ },
+ "167": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 147,
+   "total": 913
+  }
+ },
+ "269": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 143,
+   "total": 910
+  }
+ },
+ "201": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 139,
+   "total": 901
+  }
+ },
+ "133": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 143,
+   "total": 909
+  }
+ },
+ "65": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 163,
+   "total": 927
+  }
+ },
+ "99": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 134,
+   "total": 900
+  }
+ },
+ "31": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 149,
+   "total": 916
+  }
+ },
+ "234": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 159,
+   "total": 926
+  }
+ },
+ "166": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 179,
+   "total": 948
+  }
+ },
+ "224": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 137,
+   "total": 901
+  }
+ },
+ "268": {
+  "algorithm": null,
+  "confidence": 0.0,
+  "parse_failed": true
+ },
+ "200": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 770,
+   "completion": 145,
+   "total": 915
+  }
+ },
+ "132": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 136,
+   "total": 901
+  }
+ },
+ "64": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 142,
+   "total": 909
+  }
+ },
+ "98": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 760,
+   "completion": 130,
+   "total": 890
+  }
+ },
+ "30": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 138,
+   "total": 906
+  }
+ },
+ "233": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 124,
+   "total": 890
+  }
+ },
+ "165": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 151,
+   "total": 916
+  }
+ },
+ "267": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 152,
+   "total": 921
+  }
+ },
+ "199": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 133,
+   "total": 901
+  }
+ },
+ "131": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 131,
+   "total": 897
+  }
+ },
+ "63": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 141,
+   "total": 906
+  }
+ },
+ "97": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 128,
+   "total": 893
+  }
+ },
+ "29": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 136,
+   "total": 901
+  }
+ },
+ "3": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 132,
+   "total": 898
+  }
+ },
+ "232": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 761,
+   "completion": 143,
+   "total": 904
+  }
+ },
+ "164": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 171,
+   "total": 938
+  }
+ },
+ "266": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 171,
+   "total": 937
+  }
+ },
+ "198": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 140,
+   "total": 906
+  }
+ },
+ "130": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 152,
+   "total": 919
+  }
+ },
+ "62": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 182,
+   "total": 947
+  }
+ },
+ "96": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 142,
+   "total": 906
+  }
+ },
+ "28": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 151,
+   "total": 917
+  }
+ },
+ "299": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 142,
+   "total": 906
+  }
+ },
+ "231": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 155,
+   "total": 921
+  }
+ },
+ "163": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 147,
+   "total": 912
+  }
+ },
+ "265": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 144,
+   "total": 912
+  }
+ },
+ "197": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 135,
+   "total": 897
+  }
+ },
+ "129": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 135,
+   "total": 901
+  }
+ },
+ "61": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 177,
+   "total": 946
+  }
+ },
+ "95": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 155,
+   "total": 917
+  }
+ },
+ "27": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 762,
+   "completion": 148,
+   "total": 910
+  }
+ },
+ "54": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 146,
+   "total": 912
+  }
+ },
+ "298": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 140,
+   "total": 907
+  }
+ },
+ "230": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 132,
+   "total": 900
+  }
+ },
+ "162": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 179,
+   "total": 946
+  }
+ },
+ "264": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 132,
+   "total": 899
+  }
+ },
+ "196": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 147,
+   "total": 914
+  }
+ },
+ "128": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 193,
+   "total": 960
+  }
+ },
+ "60": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 146,
+   "total": 913
+  }
+ },
+ "94": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 136,
+   "total": 902
+  }
+ },
+ "26": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 133,
+   "total": 900
+  }
+ },
+ "297": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 148,
+   "total": 914
+  }
+ },
+ "229": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 125,
+   "total": 889
+  }
+ },
+ "161": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 128,
+   "total": 893
+  }
+ },
+ "263": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 151,
+   "total": 917
+  }
+ },
+ "195": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 137,
+   "total": 904
+  }
+ },
+ "59": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 152,
+   "total": 916
+  }
+ },
+ "127": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 145,
+   "total": 912
+  }
+ },
+ "93": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 156,
+   "total": 924
+  }
+ },
+ "25": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 142,
+   "total": 906
+  }
+ },
+ "296": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 154,
+   "total": 919
+  }
+ },
+ "228": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 167,
+   "total": 932
+  }
+ },
+ "160": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 182,
+   "total": 950
+  }
+ },
+ "58": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 135,
+   "total": 900
+  }
+ },
+ "262": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 131,
+   "total": 897
+  }
+ },
+ "194": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 134,
+   "total": 899
+  }
+ },
+ "126": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 131,
+   "total": 899
+  }
+ },
+ "92": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 136,
+   "total": 904
+  }
+ },
+ "24": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 131,
+   "total": 899
+  }
+ },
+ "295": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 140,
+   "total": 905
+  }
+ },
+ "23": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 135,
+   "total": 902
+  }
+ },
+ "227": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 154,
+   "total": 920
+  }
+ },
+ "261": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 145,
+   "total": 908
+  }
+ },
+ "193": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 136,
+   "total": 899
+  }
+ },
+ "125": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 126,
+   "total": 892
+  }
+ },
+ "57": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 136,
+   "total": 903
+  }
+ },
+ "159": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 167,
+   "total": 932
+  }
+ },
+ "91": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 148,
+   "total": 911
+  }
+ },
+ "22": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 154,
+   "total": 920
+  }
+ },
+ "294": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 133,
+   "total": 896
+  }
+ },
+ "226": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 149,
+   "total": 914
+  }
+ },
+ "56": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 137,
+   "total": 903
+  }
+ },
+ "260": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 763,
+   "completion": 134,
+   "total": 897
+  }
+ },
+ "192": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 145,
+   "total": 914
+  }
+ },
+ "124": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 133,
+   "total": 897
+  }
+ },
+ "158": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 138,
+   "total": 904
+  }
+ },
+ "90": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 136,
+   "total": 901
+  }
+ },
+ "21": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 181,
+   "total": 945
+  }
+ },
+ "293": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 151,
+   "total": 915
+  }
+ },
+ "225": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 760,
+   "completion": 152,
+   "total": 912
+  }
+ },
+ "191": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 133,
+   "total": 901
+  }
+ },
+ "123": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 764,
+   "completion": 142,
+   "total": 906
+  }
+ },
+ "1": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 767,
+   "completion": 145,
+   "total": 912
+  }
+ },
+ "259": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 769,
+   "completion": 141,
+   "total": 910
+  }
+ },
+ "55": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 151,
+   "total": 916
+  }
+ },
+ "157": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 766,
+   "completion": 145,
+   "total": 911
+  }
+ },
+ "89": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 768,
+   "completion": 166,
+   "total": 934
+  }
+ },
+ "20": {
+  "algorithm": "NN2opt",
+  "confidence": 0.85,
+  "parse_failed": false,
+  "usage": {
+   "prompt": 765,
+   "completion": 130,
+   "total": 895
+  }
+ }
+}

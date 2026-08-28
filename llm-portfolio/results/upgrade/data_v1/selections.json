@@ -1,0 +1,2646 @@
+{
+ "gen": {
+  "0": {
+   "algorithm": "GA2opt",
+   "confidence": 0.75,
+   "reason": "均匀分布下NN2opt可能表现良好，但GA2opt更稳健，能提供更可靠的解质量。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 596,
+    "completion": 46,
+    "total": 642
+   }
+  },
+  "1": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "grid结构规则，NN2opt在规则网格上表现优异，最近邻距离一致且nn_tour_len接近ri_tour_len",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 626,
+    "completion": 50,
+    "total": 676
+   }
+  },
+  "2": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "ring结构均匀分布，NN2opt在均匀几何下表现优异，最近邻距离方差为0表明高度规则，适合贪心算法",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 668,
+    "completion": 51,
+    "total": 719
+   }
+  },
+  "3": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，结合前序反馈该结构下GA2opt与NN2opt均表现优异",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 718,
+    "completion": 50,
+    "total": 768
+   }
+  },
+  "4": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，前例均获最优解，且nn_over_ri接近1表明NN优势不明显",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 754,
+    "completion": 51,
+    "total": 805
+   }
+  },
+  "5": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "mixed结构下GA2opt表现稳健，最近反馈显示其在uniform_fallback上表现良好，且nn_over_ri较高表明NN2opt可能不稳定",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 776,
+    "completion": 54,
+    "total": 830
+   }
+  },
+  "6": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "clustered结构下GA2opt表现稳健，反馈显示其在类似结构中接近最优，且nn_over_ri较高表明NN2opt可能被误导",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 811,
+    "completion": 54,
+    "total": 865
+   }
+  },
+  "7": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构历史表现GA2opt稳定，nn_over_ri=1.32表明NN可能不如RI，GA2opt综合性能最佳",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 845,
+    "completion": 53,
+    "total": 898
+   }
+  },
+  "8": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt多次表现优异，RI2opt虽略优但GA2opt更稳定，当前特征与历史反馈一致",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 878,
+    "completion": 53,
+    "total": 931
+   }
+  },
+  "9": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "走廊结构下NN2opt易被误导，GA2opt在类似结构表现稳健，反馈显示GA2opt在多数情况下接近最优。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 900,
+    "completion": 52,
+    "total": 952
+   }
+  },
+  "10": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近实例反馈显示其与最优算法集合高度一致，置信度高。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 946,
+    "completion": 48,
+    "total": 994
+   }
+  },
+  "11": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近实例反馈显示其与RI2opt性能相当且gap较低",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 941,
+    "completion": 47,
+    "total": 988
+   }
+  },
+  "12": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "clustered结构下GA2opt表现优异，反馈显示GA2opt在clustered实例上gap=0.00%，且nn_over_ri=1.03表明NN可能不如RI稳定。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 932,
+    "completion": 64,
+    "total": 996
+   }
+  },
+  "13": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构历史表现GA2opt稳定，gap多在0.26%以内，与RI2opt效果接近",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 934,
+    "completion": 48,
+    "total": 982
+   }
+  },
+  "14": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "ring结构下GA2opt表现稳健，最近uniform_fallback实例中GA2opt多次接近最优，且nn_tour_len与ri_tour_len相同表明结构规则",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 927,
+    "completion": 58,
+    "total": 985
+   }
+  },
+  "15": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构历史表现GA2opt稳定，nn_over_ri=1.074表明RI2opt可能略优但差距小",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 941,
+    "completion": 52,
+    "total": 993
+   }
+  },
+  "16": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近多个同类实例gap接近0%，RI2opt虽有时最优但差距微小",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 947,
+    "completion": 50,
+    "total": 997
+   }
+  },
+  "17": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近7例同类结构中6例gap<0.1%，RI2opt虽略优但差距极小",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 944,
+    "completion": 57,
+    "total": 1001
+   }
+  },
+  "18": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "clustered结构下GA2opt表现优异，最近同类实例#12显示GA2opt与RI2opt并列最优，且GA2opt在多数实例中表现稳健。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 938,
+    "completion": 59,
+    "total": 997
+   }
+  },
+  "19": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构历史表现最佳，GA2opt多次获得最优解，特征显示分布均匀",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 942,
+    "completion": 42,
+    "total": 984
+   }
+  },
+  "20": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在最近7例中6次达到最优，表现稳健且一致。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 938,
+    "completion": 45,
+    "total": 983
+   }
+  },
+  "21": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近同类实例均获得0% gap，且nn_over_ri值适中表明几何结构适合GA2opt",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 935,
+    "completion": 56,
+    "total": 991
+   }
+  },
+  "22": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt历史表现优异，多次获得最优解，置信度高。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 937,
+    "completion": 42,
+    "total": 979
+   }
+  },
+  "23": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在最近7例中均取得最优效果，置信度高。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 933,
+    "completion": 43,
+    "total": 976
+   }
+  },
+  "24": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在最近7例中均表现最优，gap为0%，且该结构适合GA2opt的稳健搜索能力。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 927,
+    "completion": 55,
+    "total": 982
+   }
+  },
+  "25": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt连续7次表现最优，当前实例特征与历史成功案例高度一致",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 927,
+    "completion": 45,
+    "total": 972
+   }
+  },
+  "26": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt历史表现优异，多次获得最优解，且NN2opt在均匀分布下可能不如GA2opt稳健。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 926,
+    "completion": 54,
+    "total": 980
+   }
+  },
+  "27": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "走廊结构下NN2opt易被误导，GA2opt在最近uniform_fallback实例表现稳定，适合当前几何特征",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 919,
+    "completion": 48,
+    "total": 967
+   }
+  },
+  "28": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt表现优异，最近6例同类结构均获得0%或极小gap，置信度高。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 926,
+    "completion": 50,
+    "total": 976
+   }
+  },
+  "29": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "mixed结构下GA2opt表现稳健，最近uniform_fallback实例中GA2opt多次达到最优，置信度高。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 918,
+    "completion": 47,
+    "total": 965
+   }
+  },
+  "30": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "clustered结构下GA2opt表现稳健，RI2tour_len更优但NN2opt易被聚类误导",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 930,
+    "completion": 46,
+    "total": 976
+   }
+  },
+  "31": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt历史表现优异，多次获得最优解且gap为0，是此类结构的稳健选择。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 927,
+    "completion": 49,
+    "total": 976
+   }
+  },
+  "32": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt表现优异，最近7例同类结构均获得0% gap，且该算法稳健性强。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 934,
+    "completion": 50,
+    "total": 984
+   }
+  },
+  "33": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "走廊结构实例#27显示GA2opt表现优异，当前实例也是走廊结构且NN2opt在走廊下易被误导",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 935,
+    "completion": 49,
+    "total": 984
+   }
+  },
+  "34": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近同类实例gap接近0%，且nn_over_ri=1.15表明NN可能不如RI",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 942,
+    "completion": 54,
+    "total": 996
+   }
+  },
+  "35": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近5例均取得0%或极小gap，且该结构适合GA2opt的全局搜索能力。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 938,
+    "completion": 57,
+    "total": 995
+   }
+  },
+  "36": {
+   "algorithm": "RI2opt",
+   "confidence": 0.85,
+   "reason": "clustered结构，RI2opt在最近实例#30表现最佳，且nn_over_ri>1表明最近邻可能误导",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 934,
+    "completion": 49,
+    "total": 983
+   }
+  },
+  "37": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt历史表现优异，最近5例中4例达到最优，且NN2opt在均匀分布中可能不如GA2opt稳健。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 939,
+    "completion": 58,
+    "total": 997
+   }
+  },
+  "38": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "ring结构通常表现良好，GA2opt在最近uniform_fallback和corridor上表现优异，gap为0%。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 937,
+    "completion": 47,
+    "total": 984
+   }
+  },
+  "39": {
+   "algorithm": "GA2opt",
+   "confidence": 0.9,
+   "reason": "走廊结构中GA2opt表现优异，历史反馈显示在类似n=50的corridor实例上gap=0%，且nn_over_ri=1.32表明NN可能不如RI",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 948,
+    "completion": 62,
+    "total": 1010
+   }
+  },
+  "40": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近5例中4例gap为0%，且nn_over_ri值适中",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 945,
+    "completion": 50,
+    "total": 995
+   }
+  },
+  "41": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近5例均接近最优，且nn_over_ri值表明NN可能不如GA2opt可靠。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 948,
+    "completion": 55,
+    "total": 1003
+   }
+  },
+  "42": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "clustered结构下GA2opt表现优异，最近实例#36显示GA2opt与RI2opt并列最优，且GA2opt在多种结构下稳定表现",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 945,
+    "completion": 57,
+    "total": 1002
+   }
+  },
+  "43": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近同类实例gap均为0%，且RI_tour_len显著优于NN",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 944,
+    "completion": 48,
+    "total": 992
+   }
+  },
+  "44": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近7例同类结构中6例gap=0%，且nn_over_ri=1.29表明NN2opt可能不如GA2opt稳健",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 942,
+    "completion": 64,
+    "total": 1006
+   }
+  },
+  "45": {
+   "algorithm": "RI2opt",
+   "confidence": 0.85,
+   "reason": "走廊结构RI2opt表现更优，最近同类实例#39显示RI2opt比GA2opt更接近最优解。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 937,
+    "completion": 49,
+    "total": 986
+   }
+  },
+  "46": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近5例均取得最优解，置信度高",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 946,
+    "completion": 43,
+    "total": 989
+   }
+  },
+  "47": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在多个实例表现完美，置信度高且稳定。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 953,
+    "completion": 41,
+    "total": 994
+   }
+  },
+  "48": {
+   "algorithm": "GA2opt",
+   "confidence": 0.9,
+   "reason": "clustered结构下GA2opt表现优异，最近同类实例gap=0%，且NN2opt在聚类中易被误导",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 940,
+    "completion": 49,
+    "total": 989
+   }
+  },
+  "49": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近同类实例gap接近0%，且RI2opt长度优势不明显",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 943,
+    "completion": 47,
+    "total": 990
+   }
+  },
+  "50": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在最近9例中8次最优，表现稳健且gap为0%。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 948,
+    "completion": 46,
+    "total": 994
+   }
+  },
+  "51": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在最近5例中均表现优异，gap为0%，且是多数实例的最优算法。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 942,
+    "completion": 51,
+    "total": 993
+   }
+  },
+  "52": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在最近9例中8次最优，表现稳健，置信度高。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 943,
+    "completion": 45,
+    "total": 988
+   }
+  },
+  "53": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在最近8例中表现优异，gap均为0%，且是多数实例的最优解之一。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 939,
+    "completion": 51,
+    "total": 990
+   }
+  },
+  "54": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "clustered结构下GA2opt表现稳定，最近反馈显示其在clustered实例中达到最优解，且nn_over_ri值较高表明NN2opt可能不如GA2opt稳健。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 940,
+    "completion": 62,
+    "total": 1002
+   }
+  },
+  "55": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt多次表现优异，且RI2opt在最近clustered实例中表现略逊",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 938,
+    "completion": 47,
+    "total": 985
+   }
+  },
+  "56": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在最近7例中全部达到最优，表现稳定可靠。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 944,
+    "completion": 43,
+    "total": 987
+   }
+  },
+  "57": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "走廊结构下GA2opt表现稳健，近期反馈显示其在多种结构上接近最优，且RI2opt在走廊中可能略逊",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 928,
+    "completion": 51,
+    "total": 979
+   }
+  },
+  "58": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt连续7次表现最优，gap为0%，且当前实例特征与之前成功案例相似。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 934,
+    "completion": 50,
+    "total": 984
+   }
+  },
+  "59": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt连续8次表现最优，gap为0%，且当前实例特征与之前成功案例相似。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 940,
+    "completion": 50,
+    "total": 990
+   }
+  },
+  "60": {
+   "algorithm": "RI2opt",
+   "confidence": 0.85,
+   "reason": "clustered结构中RI2opt表现最佳，最近实例#54显示GA2opt在clustered上gap达0.17%，而RI2opt为真实最优。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 931,
+    "completion": 58,
+    "total": 989
+   }
+  },
+  "61": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt连续5次达到最优，置信度高，且nn_over_ri接近1表明NN2opt优势不明显",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 940,
+    "completion": 52,
+    "total": 992
+   }
+  },
+  "62": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近5例均获得最优解，置信度高",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 938,
+    "completion": 43,
+    "total": 981
+   }
+  },
+  "63": {
+   "algorithm": "NN2opt",
+   "confidence": 0.75,
+   "reason": "走廊结构NN2opt表现优异，最近实例#57显示NN2opt在类似n=50走廊上最优，GA2optgap达0.38%。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 932,
+    "completion": 56,
+    "total": 988
+   }
+  },
+  "64": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构历史表现GA2opt稳定，RI2opt也表现良好，但GA2opt在多数此类实例中表现最优",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 935,
+    "completion": 51,
+    "total": 986
+   }
+  },
+  "65": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近同类实例gap均低于0.1%，且NN2opt在corridor上表现不佳",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 939,
+    "completion": 53,
+    "total": 992
+   }
+  },
+  "66": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "clustered结构，RI2opt在#60表现良好，但GA2opt更稳健，且最近uniform_fallback上GA2opt表现优异",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 931,
+    "completion": 53,
+    "total": 984
+   }
+  },
+  "67": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近同类实例gap均低于0.25%，且nn_over_ri接近1表明NN2opt可能不占优",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 935,
+    "completion": 58,
+    "total": 993
+   }
+  },
+  "68": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近5例均取得最优或接近最优解",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 943,
+    "completion": 43,
+    "total": 986
+   }
+  },
+  "69": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "走廊结构下NN2opt表现差(实例#63 gap=1.92%)，GA2opt在类似结构表现稳健，且RI2opt在走廊可能略逊",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 937,
+    "completion": 59,
+    "total": 996
+   }
+  },
+  "70": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近5例均取得0% gap，且NN2opt在corridor上表现不佳",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 945,
+    "completion": 52,
+    "total": 997
+   }
+  },
+  "71": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "mixed结构下GA2opt在uniform类表现优异，RI2tour长度更短但NN2opt在mixed结构不稳定",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 939,
+    "completion": 48,
+    "total": 987
+   }
+  },
+  "72": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "clustered结构下GA2opt在历史反馈中表现优异，结合低nn_cv值表明聚类紧凑，GA2opt能高效优化",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 936,
+    "completion": 51,
+    "total": 987
+   }
+  },
+  "73": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近同类实例gap接近0%，且RI2opt和NN2opt表现不如GA2opt一致",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 942,
+    "completion": 54,
+    "total": 996
+   }
+  },
+  "74": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在最近10例中表现优异，gap均为0%，且该结构特征与历史成功案例一致。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 943,
+    "completion": 52,
+    "total": 995
+   }
+  },
+  "75": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "走廊结构且GA2opt在最近同类实例中表现完美，RI2opt也是备选但GA2opt更稳健。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 935,
+    "completion": 49,
+    "total": 984
+   }
+  },
+  "76": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在多个实例中表现最优，且nn_over_ri=1.13表明NN不如RI，但GA2opt结合了全局搜索和局部优化。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 940,
+    "completion": 63,
+    "total": 1003
+   }
+  },
+  "77": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在最近6例中均达到最优，表现稳健可靠。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 941,
+    "completion": 43,
+    "total": 984
+   }
+  },
+  "78": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "clustered结构下GA2opt在最近实例表现完美，且ri_tour_len显著优于nn_tour_len，表明GA2opt适合此聚类分布",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 936,
+    "completion": 55,
+    "total": 991
+   }
+  },
+  "79": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在最近多个实例中表现最优，gap为0%，且数值特征显示RI表现较好但GA2opt更稳健。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 940,
+    "completion": 56,
+    "total": 996
+   }
+  },
+  "80": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在最近9例中全部达到最优，表现极其稳健可靠。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 941,
+    "completion": 44,
+    "total": 985
+   }
+  },
+  "81": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在最近10例中全部最优，且当前实例特征与历史成功案例一致",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 937,
+    "completion": 47,
+    "total": 984
+   }
+  },
+  "82": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt连续多次达到最优，且n=51与历史成功案例规模相近。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 943,
+    "completion": 46,
+    "total": 989
+   }
+  },
+  "83": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt连续9次表现最优，置信度高且特征稳定",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 944,
+    "completion": 41,
+    "total": 985
+   }
+  },
+  "84": {
+   "algorithm": "GA2opt",
+   "confidence": 0.9,
+   "reason": "clustered结构下GA2opt表现优异，最近反馈显示其在多种结构下均达到最优解",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 946,
+    "completion": 43,
+    "total": 989
+   }
+  },
+  "85": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt连续7次表现最优，置信度高，且该实例特征与历史成功案例一致。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 958,
+    "completion": 49,
+    "total": 1007
+   }
+  },
+  "86": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "ring结构接近uniform_fallback，GA2opt在最近10例中表现完美，gap=0%，是最稳健选择。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 948,
+    "completion": 48,
+    "total": 996
+   }
+  },
+  "87": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "走廊结构下NN2opt易被误导，GA2opt在最近多个实例中表现稳健且接近最优",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 950,
+    "completion": 45,
+    "total": 995
+   }
+  },
+  "88": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt连续7次表现最优，置信度高且特征稳定",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 958,
+    "completion": 41,
+    "total": 999
+   }
+  },
+  "89": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "mixed结构下GA2opt表现稳健，最近反馈显示其在多种结构下接近最优，RI2opt在uniform_fallback上略优但差距小",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 949,
+    "completion": 54,
+    "total": 1003
+   }
+  },
+  "90": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "clustered结构下GA2opt表现优异，最近同类实例#84中GA2opt达到最优解，且nn_over_ri比值适中",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 946,
+    "completion": 52,
+    "total": 998
+   }
+  },
+  "91": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在最近5例中均表现优异，gap接近0%，是最稳健选择。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 951,
+    "completion": 47,
+    "total": 998
+   }
+  },
+  "92": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近同类实例gap接近0%，置信度高",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 943,
+    "completion": 42,
+    "total": 985
+   }
+  },
+  "93": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近同类实例gap接近0%，且nn_over_ri接近1表明NN可能接近最优",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 943,
+    "completion": 52,
+    "total": 995
+   }
+  },
+  "94": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近实例中虽有RI2opt略优，但差距微小且GA2opt多次达到最优",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 937,
+    "completion": 53,
+    "total": 990
+   }
+  },
+  "95": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构GA2opt表现稳定，最近同类实例gap均低于0.1%，RI2opt虽有时更优但差距微小",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 934,
+    "completion": 52,
+    "total": 986
+   }
+  },
+  "96": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "clustered结构下GA2opt表现优异，最近同类实例gap为0%，且nn_over_ri较高表明NN2opt可能不如GA2opt稳定。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 936,
+    "completion": 56,
+    "total": 992
+   }
+  },
+  "97": {
+   "algorithm": "RI2opt",
+   "confidence": 0.75,
+   "reason": "uniform_fallback结构下RI2opt多次表现最佳，NN2opt可能被误导，GA2opt虽稳健但RI2opt在此类更优",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 935,
+    "completion": 54,
+    "total": 989
+   }
+  },
+  "98": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近同类实例gap极小，RI2opt虽有时最优但差距微小",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 936,
+    "completion": 49,
+    "total": 985
+   }
+  },
+  "99": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近同类实例gap均为0%，且nn_over_ri比值适中",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 940,
+    "completion": 47,
+    "total": 987
+   }
+  },
+  "100": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近10例中8例gap为0%，且与RI2opt交替成为最佳选择",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 945,
+    "completion": 52,
+    "total": 997
+   }
+  },
+  "101": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "mixed结构下GA2opt表现稳健，最近uniform_fallback实例中GA2opt多次接近最优，且nn_over_ri较高表明NN2opt可能不稳定",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 936,
+    "completion": 56,
+    "total": 992
+   }
+  },
+  "102": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "clustered结构下GA2opt表现优异，反馈显示在类似n=50 clustered实例中GA2opt达到最优解。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 937,
+    "completion": 49,
+    "total": 986
+   }
+  },
+  "103": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近多个同类实例gap=0%，且RI_tour_len显著优于NN_tour_len",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 944,
+    "completion": 52,
+    "total": 996
+   }
+  },
+  "104": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近10例中8例最优，且该实例特征与成功案例相似",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 944,
+    "completion": 49,
+    "total": 993
+   }
+  },
+  "105": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近5例均取得最优解，置信度高",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 948,
+    "completion": 43,
+    "total": 991
+   }
+  },
+  "106": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近实例中多数达到最优，且n=60时RI2opt略逊",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 941,
+    "completion": 50,
+    "total": 991
+   }
+  },
+  "107": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "mixed结构且GA2opt在最近类似实例表现优异，RI2opt在uniform_fallback上略逊，选择更稳健的GA2opt",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 933,
+    "completion": 53,
+    "total": 986
+   }
+  },
+  "108": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "clustered结构下GA2opt在最近实例表现优异，gap为0%，且包含局部搜索适合聚类结构",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 934,
+    "completion": 46,
+    "total": 980
+   }
+  },
+  "109": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近5例均取得最优解，置信度高。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 933,
+    "completion": 44,
+    "total": 977
+   }
+  },
+  "110": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "ring结构下GA2opt表现稳定，最近反馈显示其在多种结构下均能接近最优解，且nn_tour_len与ri_tour_len接近，表明几何结构规整",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 932,
+    "completion": 61,
+    "total": 993
+   }
+  },
+  "111": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构历史表现GA2opt最优，n=54接近历史成功案例，RI2opt略逊但差距小",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 941,
+    "completion": 49,
+    "total": 990
+   }
+  },
+  "112": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近9例中8例最优，且nn_over_ri值表明NN2opt可能不如GA2opt",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 940,
+    "completion": 56,
+    "total": 996
+   }
+  },
+  "113": {
+   "algorithm": "GA2opt",
+   "confidence": 0.9,
+   "reason": "uniform_fallback结构下GA2opt表现稳定，最近多个同类实例gap为0%，且nn_over_ri=1.07表明NN可能不如RI",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 948,
+    "completion": 55,
+    "total": 1003
+   }
+  },
+  "114": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "clustered结构且GA2opt在同类实例中表现优异，gap为0%，且最近多个clustered实例中GA2opt都是最优选择之一。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 947,
+    "completion": 55,
+    "total": 1002
+   }
+  },
+  "115": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在最近7例中6次达到最优，表现稳健且一致",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 951,
+    "completion": 44,
+    "total": 995
+   }
+  },
+  "116": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "ring结构历史表现优异，GA2opt在最近多个实例中表现稳定且接近最优",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 940,
+    "completion": 41,
+    "total": 981
+   }
+  },
+  "117": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在多个实例表现优异，gap=0%，且RI2opt和NN2opt也常为最优选择",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 960,
+    "completion": 53,
+    "total": 1013
+   }
+  },
+  "118": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt多次表现最优，nn_over_ri=1.27表明NN可能不如RI，但GA2opt结合全局搜索与局部优化更稳健",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 966,
+    "completion": 60,
+    "total": 1026
+   }
+  },
+  "119": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform_fallback结构下GA2opt在最近8个实例中均达到最优，表现稳健可靠。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 961,
+    "completion": 44,
+    "total": 1005
+   }
+  }
+ },
+ "uni": {
+  "0": {
+   "algorithm": "NN2opt",
+   "confidence": 0.75,
+   "reason": "uniform结构下NN2opt表现优异，nn_tour_len与ri_tour_len差距小，表明最近邻算法在此分布下有效",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 593,
+    "completion": 51,
+    "total": 644
+   }
+  },
+  "1": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构NN2opt表现良好，最近实例反馈显示NN2opt能达到最优解，且nn_over_ri值接近1表明NN与RI性能相当",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 644,
+    "completion": 55,
+    "total": 699
+   }
+  },
+  "2": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt表现良好，前两个uniform实例NN2opt均接近最优，且nn_over_ri=1.067表明NN有竞争力",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 676,
+    "completion": 56,
+    "total": 732
+   }
+  },
+  "3": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt表现优异，前两次uniform实例gap均小于1.5%，且nn_over_ri=1.14表明NN有竞争力",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 709,
+    "completion": 55,
+    "total": 764
+   }
+  },
+  "4": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt在历史实例表现优异，gap均低于1.3%，且nn_over_ri=1.113表明NN有竞争力",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 742,
+    "completion": 54,
+    "total": 796
+   }
+  },
+  "5": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt在最近5例中表现优异，gap均低于1.25%，且该实例特征与成功案例相似。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 779,
+    "completion": 52,
+    "total": 831
+   }
+  },
+  "6": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt历史表现优异，gap均低于2.5%，且nn_over_ri=1.19表明最近邻算法有优势",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 810,
+    "completion": 54,
+    "total": 864
+   }
+  },
+  "7": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt表现优异，最近6例中NN2opt多次达到最优，gap均小于3.5%。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 844,
+    "completion": 49,
+    "total": 893
+   }
+  },
+  "8": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt历史表现优异，gap普遍低于2%，且nn_over_ri=1.22表明NN有竞争力",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 869,
+    "completion": 50,
+    "total": 919
+   }
+  },
+  "9": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt表现优异，历史反馈显示gap普遍较低，且nn_over_ri接近1表明NN与RI性能相当",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 906,
+    "completion": 51,
+    "total": 957
+   }
+  },
+  "10": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt表现优异，历史反馈显示gap极小，且nn_over_ri接近1表明NN与RI性能相当",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 939,
+    "completion": 51,
+    "total": 990
+   }
+  },
+  "11": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt历史表现优异，gap普遍在1-3%之间，且多次达到最优解。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 933,
+    "completion": 47,
+    "total": 980
+   }
+  },
+  "12": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt历史表现优异，多数情况达到最优或接近最优，置信度高。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 931,
+    "completion": 43,
+    "total": 974
+   }
+  },
+  "13": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt表现优异，历史反馈显示gap普遍低于1%，且nn_over_ri比值适中",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 928,
+    "completion": 46,
+    "total": 974
+   }
+  },
+  "14": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt历史表现优异，gap均低于3.5%，且当前nn_over_ri值1.19表明NN有竞争力",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 928,
+    "completion": 53,
+    "total": 981
+   }
+  },
+  "15": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构NN2opt表现稳定，最近实例gap均<1%，且nn_over_ri=1.1表明NN有竞争力",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 917,
+    "completion": 50,
+    "total": 967
+   }
+  },
+  "16": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt表现稳定，最近实例gap均小于1%，且nn_over_ri=1.26表明NN有优势",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 921,
+    "completion": 51,
+    "total": 972
+   }
+  },
+  "17": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构NN2opt历史表现优异，gap均小于1.27%，且此实例nn_over_ri=1.08接近历史最优表现",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 930,
+    "completion": 53,
+    "total": 983
+   }
+  },
+  "18": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt表现稳定，最近实例gap均小于1%，且此实例nn_over_ri接近1，表明NN与RI性能相当",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 930,
+    "completion": 54,
+    "total": 984
+   }
+  },
+  "19": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构NN2opt表现稳定，最近实例gap均低于1%，且nn_over_ri=1.1表明NN有竞争力",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 927,
+    "completion": 50,
+    "total": 977
+   }
+  },
+  "20": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构NN2opt表现稳定，最近实例gap均小于1%，且nn_over_ri=1.1表明NN有竞争力",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 919,
+    "completion": 50,
+    "total": 969
+   }
+  },
+  "21": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构NN2opt表现稳定，最近10例中8例gap<1%，当前nn_tour_len与ri_tour_len差距适中",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 923,
+    "completion": 52,
+    "total": 975
+   }
+  },
+  "22": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt表现优异，最近实例gap均小于1%，且nn_over_ri=1.1表明NN有优势",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 923,
+    "completion": 51,
+    "total": 974
+   }
+  },
+  "23": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构NN2opt表现稳定，多数实例gap<1%，当前n=46适中，nn_over_ri=1.0657表明NN有竞争力",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 920,
+    "completion": 56,
+    "total": 976
+   }
+  },
+  "24": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构NN2opt表现稳定，最近实例gap均小于1.9%，且nn_tour_len与ri_tour_len差距适中",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 922,
+    "completion": 51,
+    "total": 973
+   }
+  },
+  "25": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt表现稳定，最近实例gap均小于1%，且nn_over_ri=1.23表明NN有竞争力",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 925,
+    "completion": 51,
+    "total": 976
+   }
+  },
+  "26": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt表现优异，最近10例uniform中NN2opt多次达到最优，gap均低于1%。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 918,
+    "completion": 48,
+    "total": 966
+   }
+  },
+  "27": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt表现优异，最近10例平均gap仅0.81%，且nn_over_ri接近1表明NN效果好",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 914,
+    "completion": 51,
+    "total": 965
+   }
+  },
+  "28": {
+   "algorithm": "NN2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt表现稳定，gap均小于1.6%，且nn_over_ri=1.17表明NN有竞争力",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 918,
+    "completion": 51,
+    "total": 969
+   }
+  },
+  "29": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt连续9次表现不如GA2opt，GA2opt在均匀分布中表现稳健且接近最优。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 922,
+    "completion": 50,
+    "total": 972
+   }
+  },
+  "30": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt表现稳定但gap较高，GA2opt在最近实例#29表现最优，置信度高",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 924,
+    "completion": 47,
+    "total": 971
+   }
+  },
+  "31": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt表现不稳定，GA2opt在最近实例中表现更优且gap更小",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 917,
+    "completion": 45,
+    "total": 962
+   }
+  },
+  "32": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt表现稳定但gap较高，GA2opt在最近实例中表现最优且gap为0。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 915,
+    "completion": 48,
+    "total": 963
+   }
+  },
+  "33": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt近期表现不稳定(gap 0.19-0.99%)，而GA2opt在类似实例上表现优异(gap 0.00%)",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 918,
+    "completion": 60,
+    "total": 978
+   }
+  },
+  "34": {
+   "algorithm": "GA2opt",
+   "confidence": 0.85,
+   "reason": "uniform结构下NN2opt近期表现不稳定(gap 0.19-0.99%)，而GA2opt在多个uniform实例中达到最优gap 0%。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 915,
+    "completion": 58,
+    "total": 973
+   }
+  },
+  "35": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt最近5次实例均达到最优，NN2opt表现不稳定，GA2opt稳健性最佳",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 917,
+    "completion": 48,
+    "total": 965
+   }
+  },
+  "36": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt表现稳定，最近10例uniform中NN2opt有gap，GA2opt全部最优",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 917,
+    "completion": 47,
+    "total": 964
+   }
+  },
+  "37": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中9次达到最优，NN2opt表现不稳定，GA2opt稳健性最佳",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 919,
+    "completion": 50,
+    "total": 969
+   }
+  },
+  "38": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中全部最优，NN2opt在#28表现不佳，RI2opt虽表现良好但GA2opt更稳定",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 920,
+    "completion": 57,
+    "total": 977
+   }
+  },
+  "39": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近9例中全部达到最优，表现稳定可靠",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 925,
+    "completion": 40,
+    "total": 965
+   }
+  },
+  "40": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续9次达到最优，nn_over_ri=1.18表明NN2opt可能不如RI2opt",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 928,
+    "completion": 51,
+    "total": 979
+   }
+  },
+  "41": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续9次表现优异，gap接近0%，是此类分布的最优选择",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 926,
+    "completion": 44,
+    "total": 970
+   }
+  },
+  "42": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近9例中8次达到最优，表现稳健可靠",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 927,
+    "completion": 41,
+    "total": 968
+   }
+  },
+  "43": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中表现优异，gap均为0%，且该实例特征与成功案例相似",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 922,
+    "completion": 48,
+    "total": 970
+   }
+  },
+  "44": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中9次达到最优，表现稳健可靠。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 923,
+    "completion": 42,
+    "total": 965
+   }
+  },
+  "45": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近9例中8次最优，表现稳定可靠，置信度高。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 921,
+    "completion": 44,
+    "total": 965
+   }
+  },
+  "46": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中9次达到最优，表现稳健且一致，置信度高。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 931,
+    "completion": 46,
+    "total": 977
+   }
+  },
+  "47": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次实例表现最优，当前n=57与#41相同且gap=0%，高度可靠",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 931,
+    "completion": 50,
+    "total": 981
+   }
+  },
+  "48": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中全部表现优异，gap为0%，是最稳健选择。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 927,
+    "completion": 45,
+    "total": 972
+   }
+  },
+  "49": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近9例中表现最优，gap均为0%，且与真实最佳算法高度一致。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 922,
+    "completion": 48,
+    "total": 970
+   }
+  },
+  "50": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近9例中表现优异，gap均为0%，且该实例n=51与成功案例相近",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 927,
+    "completion": 50,
+    "total": 977
+   }
+  },
+  "51": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构上GA2opt连续10次表现最优，且当前实例特征与之前成功案例相似。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 935,
+    "completion": 44,
+    "total": 979
+   }
+  },
+  "52": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中均达到最优，表现稳定可靠",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 940,
+    "completion": 40,
+    "total": 980
+   }
+  },
+  "53": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次实例表现最优，gap=0%，当前实例特征与之前成功案例一致。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 938,
+    "completion": 48,
+    "total": 986
+   }
+  },
+  "54": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中全部达到最优，表现稳定可靠",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 941,
+    "completion": 40,
+    "total": 981
+   }
+  },
+  "55": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中全部达到最优，且n=40与历史案例规模相近，表现稳定。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 945,
+    "completion": 50,
+    "total": 995
+   }
+  },
+  "56": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次实例表现最优，gap为0%，且包含在真实最优算法集合中。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 940,
+    "completion": 48,
+    "total": 988
+   }
+  },
+  "57": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次实例表现最优，置信度高，且当前实例特征与之前成功案例相似。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 943,
+    "completion": 48,
+    "total": 991
+   }
+  },
+  "58": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次实例表现完美，且是多数实例的最优算法之一，置信度高。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 945,
+    "completion": 47,
+    "total": 992
+   }
+  },
+  "59": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中全部达到最优，表现稳定可靠",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 947,
+    "completion": 40,
+    "total": 987
+   }
+  },
+  "60": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中全部达到最优，且n=50规模适中，适合GA2opt发挥优势。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 943,
+    "completion": 51,
+    "total": 994
+   }
+  },
+  "61": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次达到最优，表现稳健可靠，置信度高",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 939,
+    "completion": 40,
+    "total": 979
+   }
+  },
+  "62": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次实例均达到最优，置信度高且稳定表现优异。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 942,
+    "completion": 43,
+    "total": 985
+   }
+  },
+  "63": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次实例表现最优，gap=0%，且当前实例特征与之前成功案例相似。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 939,
+    "completion": 49,
+    "total": 988
+   }
+  },
+  "64": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中全部达到最优，且该实例特征与之前成功案例相似",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 930,
+    "completion": 46,
+    "total": 976
+   }
+  },
+  "65": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近9例中全部达到最优，表现稳定可靠",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 934,
+    "completion": 40,
+    "total": 974
+   }
+  },
+  "66": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中全部达到最优，表现稳定可靠",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 937,
+    "completion": 40,
+    "total": 977
+   }
+  },
+  "67": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次实例表现完美，gap=0%，且是多数实例的最优算法之一。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 929,
+    "completion": 48,
+    "total": 977
+   }
+  },
+  "68": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中全部达到最优，表现稳定可靠",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 930,
+    "completion": 40,
+    "total": 970
+   }
+  },
+  "69": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续9次实例表现完美，gap=0%，且是多数实例的最优算法之一。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 931,
+    "completion": 48,
+    "total": 979
+   }
+  },
+  "70": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近9例中全部达到最优，置信度高且表现稳定。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 933,
+    "completion": 43,
+    "total": 976
+   }
+  },
+  "71": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次达到最优，置信度高，且nn_over_ri=1.15表明NN2opt可能不如GA2opt稳定。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 935,
+    "completion": 57,
+    "total": 992
+   }
+  },
+  "72": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中全部达到最优，表现稳定可靠",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 928,
+    "completion": 40,
+    "total": 968
+   }
+  },
+  "73": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次实例表现最优，gap=0%，且该实例规模适中，GA2opt稳健性最佳",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 936,
+    "completion": 51,
+    "total": 987
+   }
+  },
+  "74": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次达到最优，nn_over_ri=1.222表明NN2opt可能不如GA2opt稳定",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 932,
+    "completion": 52,
+    "total": 984
+   }
+  },
+  "75": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续9次表现最优，仅一次RI2opt略优，置信度高",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 927,
+    "completion": 44,
+    "total": 971
+   }
+  },
+  "76": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近9个实例中表现优异，8次达到最优，仅一次gap=0.17%，是最稳健选择。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 929,
+    "completion": 54,
+    "total": 983
+   }
+  },
+  "77": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续6次表现最优，当前实例特征与历史成功案例一致，nn_over_ri较高表明NN2opt可能不如GA2opt稳定。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 927,
+    "completion": 59,
+    "total": 986
+   }
+  },
+  "78": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近9例中8次最优，gap为0%，表现稳健可靠。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 926,
+    "completion": 45,
+    "total": 971
+   }
+  },
+  "79": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近9例中8次达到最优，gap极小，表现稳健可靠。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 927,
+    "completion": 46,
+    "total": 973
+   }
+  },
+  "80": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近9例中8次达到最优，表现稳健，置信度高。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 928,
+    "completion": 44,
+    "total": 972
+   }
+  },
+  "81": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中全部最优或接近最优，表现稳定可靠。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 927,
+    "completion": 43,
+    "total": 970
+   }
+  },
+  "82": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在多个实例中表现最优，gap为0%，且当前实例特征与之前成功案例相似。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 925,
+    "completion": 49,
+    "total": 974
+   }
+  },
+  "83": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中表现优异，gap均为0%，且常与RI2opt同为最优算法。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 923,
+    "completion": 50,
+    "total": 973
+   }
+  },
+  "84": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中表现优异，9次达到最优，且n=50时gap=0%，高度可靠。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 926,
+    "completion": 53,
+    "total": 979
+   }
+  },
+  "85": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中全部达到最优，表现稳定可靠。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 933,
+    "completion": 41,
+    "total": 974
+   }
+  },
+  "86": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次表现最优，置信度高，且nn_tour_len与ri_tour_len接近，表明GA2opt的稳健性适合此实例",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 924,
+    "completion": 59,
+    "total": 983
+   }
+  },
+  "87": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次达到最优，且n=50时表现稳定，置信度高。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 930,
+    "completion": 45,
+    "total": 975
+   }
+  },
+  "88": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次实例表现最优，gap=0%，且包含当前实例相同n=50规模。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 929,
+    "completion": 49,
+    "total": 978
+   }
+  },
+  "89": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续8次达到最优，RI2opt在最近一次表现略差，GA2opt更稳健可靠。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 930,
+    "completion": 51,
+    "total": 981
+   }
+  },
+  "90": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近9例中8次达到最优，表现稳定可靠，置信度高。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 927,
+    "completion": 45,
+    "total": 972
+   }
+  },
+  "91": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续多实例表现最优，gap接近0%，特征显示均匀分布适合GA2opt",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 918,
+    "completion": 46,
+    "total": 964
+   }
+  },
+  "92": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续多实例表现最优，gap接近0%，且与RI2opt性能相当，是稳健选择。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 921,
+    "completion": 50,
+    "total": 971
+   }
+  },
+  "93": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中表现优异，gap接近0%，是最稳健选择",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 923,
+    "completion": 43,
+    "total": 966
+   }
+  },
+  "94": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近9例中8次达到最优，表现稳健且一致，置信度高。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 925,
+    "completion": 46,
+    "total": 971
+   }
+  },
+  "95": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构上GA2opt连续9次表现优异，gap接近0%，是该结构下的最优选择。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 928,
+    "completion": 44,
+    "total": 972
+   }
+  },
+  "96": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中表现最优，gap均为0%，且与真实最佳算法高度一致。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 926,
+    "completion": 48,
+    "total": 974
+   }
+  },
+  "97": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中表现优异，gap均为0%，且常与RI2opt同为最优解。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 923,
+    "completion": 50,
+    "total": 973
+   }
+  },
+  "98": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中表现优异，gap均为0%，且包含在多数最优算法集合中。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 922,
+    "completion": 49,
+    "total": 971
+   }
+  },
+  "99": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近9例中全部取得最优或接近最优结果，置信度高。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 926,
+    "completion": 44,
+    "total": 970
+   }
+  },
+  "100": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中9次达到最优，表现稳健且gap极小。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 927,
+    "completion": 45,
+    "total": 972
+   }
+  },
+  "101": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次实例均达到最优，且n=50与历史实例相似，高度可靠",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 928,
+    "completion": 47,
+    "total": 975
+   }
+  },
+  "102": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中均达到最优，且n=50与当前实例规模相近，表现稳定",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 929,
+    "completion": 49,
+    "total": 978
+   }
+  },
+  "103": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续9次达到最优，nn_tour_len与ri_tour_len接近，表明GA2opt稳健性最佳",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 928,
+    "completion": 52,
+    "total": 980
+   }
+  },
+  "104": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次实例表现完美，且nn_over_ri=1.23表明NN不如RI，但GA2opt结合全局搜索与局部优化更优",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 923,
+    "completion": 61,
+    "total": 984
+   }
+  },
+  "105": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt表现稳定，最近10例中9次达到最优，仅一次gap=0.28%",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 921,
+    "completion": 48,
+    "total": 969
+   }
+  },
+  "106": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续9次表现优异，仅一次略逊RI2opt，置信度高",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 920,
+    "completion": 44,
+    "total": 964
+   }
+  },
+  "107": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续9次表现优异，gap接近0%，是此类分布的最优选择。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 918,
+    "completion": 45,
+    "total": 963
+   }
+  },
+  "108": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续7次表现最优，且本次n=50与历史成功案例一致，置信度高",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 922,
+    "completion": 47,
+    "total": 969
+   }
+  },
+  "109": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构上GA2opt连续8次表现最优，当前实例特征与之前成功案例相似，置信度高。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 920,
+    "completion": 46,
+    "total": 966
+   }
+  },
+  "110": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近9例中8次达到最优，表现稳定可靠",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 917,
+    "completion": 41,
+    "total": 958
+   }
+  },
+  "111": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在历史实例中表现优异，gap接近0%，且与RI2opt性能相当",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 918,
+    "completion": 46,
+    "total": 964
+   }
+  },
+  "112": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中表现优异，gap均为0%，且常与最优算法集合一致",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 913,
+    "completion": 47,
+    "total": 960
+   }
+  },
+  "113": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中表现优异，gap均为0%，且与最优算法高度一致。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 917,
+    "completion": 47,
+    "total": 964
+   }
+  },
+  "114": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt在最近10例中表现优异，gap均为0%，且与最优算法高度一致。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 916,
+    "completion": 47,
+    "total": 963
+   }
+  },
+  "115": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构上GA2opt连续9次表现最优，当前实例特征与之前成功案例一致，nn_over_ri=1.16表明NN不如RI，但GA2opt结合全局搜索与局部优化更稳健。",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 919,
+    "completion": 69,
+    "total": 988
+   }
+  },
+  "116": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次实例表现最优，当前实例特征与之前成功案例一致，高置信度选择",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 916,
+    "completion": 48,
+    "total": 964
+   }
+  },
+  "117": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续10次实例表现最优，置信度高，适合均匀分布",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 918,
+    "completion": 41,
+    "total": 959
+   }
+  },
+  "118": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续8次表现最优，NN2opt在#117出现0.16%gap，GA2opt更稳健可靠",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 923,
+    "completion": 53,
+    "total": 976
+   }
+  },
+  "119": {
+   "algorithm": "GA2opt",
+   "confidence": 0.95,
+   "reason": "uniform结构下GA2opt连续9次实例表现最优，gap为0%，且当前实例特征与之前成功案例相似",
+   "parse_failed": false,
+   "usage": {
+    "prompt": 922,
+    "completion": 48,
+    "total": 970
+   }
+  }
+ }
+}
